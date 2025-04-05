@@ -1,0 +1,402 @@
+<header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+    <div class="container-xl px-4">
+        <div class="page-header-content pt-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto mt-4">
+                    <h1 class="page-header-title">
+                        <div class="page-header-icon"><i data-feather="menu"></i></div>
+                        Navigation
+                    </h1>
+                    <div class="page-header-subtitle">Navigation components to help your users find content within your application</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main page content-->
+<div class="container-xl px-4 mt-n10">
+    <div class="row">
+        <div class="col-lg-9">
+            <div id="navBordersComponent">
+                <div class="card mb-4">
+                    <div class="card-header">Borders</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <h6 class="small text-muted fw-500" id="navBordersComponentHorizontal">Horizontal:</h6>
+                        <div class="sbp-preview mb-4">
+                            <div class="sbp-preview-content">
+                                <!-- Nav Borders Variation-->
+                                <nav class="nav nav-borders">
+                                    <a class="nav-link active" href="#!">Active</a>
+                                    <a class="nav-link" href="#!">Link</a>
+                                    <a class="nav-link" href="#!">Link</a>
+                                    <a class="nav-link disabled" href="#!" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </nav>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="navBordersHorizontalTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="navBordersHorizontalHtmlTab" data-bs-toggle="tab" href="#navBordersHorizontalHtml" role="tab" aria-controls="navBordersHorizontalHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="navBordersHorizontalPugTab" data-bs-toggle="tab" href="#navBordersHorizontalPug" role="tab" aria-controls="navBordersHorizontalPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="navBordersHorizontalHtml" role="tabpanel" aria-labelledby="navBordersHorizontalHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><nav class="nav nav-borders">
+<a class="nav-link active" href="#!">Active</a>
+<a class="nav-link" href="#!">Link</a>
+<a class="nav-link" href="#!">Link</a>
+<a class="nav-link disabled" href="#!" tabindex="-1" aria-disabled="true">Disabled</a>
+</nav></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="navBordersHorizontalPug" role="tabpanel" aria-labelledby="navBordersHorizontalPugTab">
+                                        <pre class="language-pug"><code>nav.nav.nav-borders
+a.nav-link.active(href='#!') Active
+a.nav-link(href='#!') Link
+a.nav-link(href='#!') Link
+a.nav-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Disabled</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                The
+                                <code>.nav-borders</code>
+                                component is a custom variation of Bootstrap's nav component built for Simple UX. You can use any justify flex utilities to change the horizontal alignment of the nav, and you can also use this nav component in an unordered list format.
+                            </div>
+                        </div>
+                        <!-- Component Preview-->
+                        <h6 class="small text-muted fw-500" id="navBordersComponentVertical">Vertical:</h6>
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div style="max-width: 10rem">
+                                    <nav class="nav nav-borders flex-column">
+                                        <a class="nav-link active" href="#!">Active</a>
+                                        <a class="nav-link" href="#!">Link</a>
+                                        <a class="nav-link" href="#!">Link</a>
+                                        <a class="nav-link disabled" href="#!" tabindex="-1" aria-disabled="true">Disabled</a>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="navBordersVerticalTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="navBordersVerticalHtmlTab" data-bs-toggle="tab" href="#navBordersVerticalHtml" role="tab" aria-controls="navBordersVerticalHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="navBordersVerticalPugTab" data-bs-toggle="tab" href="#navBordersVerticalPug" role="tab" aria-controls="navBordersVerticalPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="navBordersVerticalHtml" role="tabpanel" aria-labelledby="navBordersVerticalHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><nav class="nav nav-borders flex-column">
+<a class="nav-link active" href="#!">Active</a>
+<a class="nav-link" href="#!">Link</a>
+<a class="nav-link" href="#!">Link</a>
+<a class="nav-link disabled" href="#!" tabindex="-1" aria-disabled="true">Disabled</a>
+</nav></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="navBordersVerticalPug" role="tabpanel" aria-labelledby="navBordersVerticalPugTab">
+                                        <pre class="language-pug"><code>nav.nav.nav-borders.flex-column
+a.nav-link.active(href='#!') Active
+a.nav-link(href='#!') Link
+a.nav-link(href='#!') Link
+a.nav-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Disabled</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                You can also use the nav borders variant when using the
+                                <code>.flex column</code>
+                                utility to create a vertical nav. The borders will move from the bottom of the nav links to the right hand side. In this example, we've set a max width of 10rem to the container that this nav is being used within.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Custom Side Navigation Component-->
+            <div id="sidenavComponent">
+                <div class="card mb-4">
+                    <div class="card-header">Custom Side Navigation Component</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <nav class="sidenav sidenav-light">
+                                    <div class="sidenav-menu">
+                                        <div class="nav">
+                                            <div class="sidenav-menu-heading">Heading</div>
+                                            <a class="nav-link" href="#!">
+                                                <div class="nav-link-icon"><i data-feather="feather"></i></div>
+                                                Link
+                                            </a>
+                                            <a class="nav-link" href="#!">
+                                                <div class="nav-link-icon"><i data-feather="feather"></i></div>
+                                                Another Link
+                                            </a>
+                                            <a class="nav-link disabled" href="#!">
+                                                <div class="nav-link-icon"><i data-feather="feather"></i></div>
+                                                Another Link
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sidenav-footer">SB Sidenav Footer</div>
+                                </nav>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="navSidenavTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="navSidenavHtmlTab" data-bs-toggle="tab" href="#navSidenavHtml" role="tab" aria-controls="navSidenavHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="navSidenavPugTab" data-bs-toggle="tab" href="#navSidenavPug" role="tab" aria-controls="navSidenavPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="navSidenavHtml" role="tabpanel" aria-labelledby="navSidenavHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><nav class="sidenav sidenav-light">
+<div class="sidenav-menu">
+<div class="nav">
+<div class="sidenav-menu-heading">Heading</div>
+<a class="nav-link" href="#!">
+<div class="nav-link-icon">
+<i data-feather="feather"></i>
+</div>
+Link
+</a>
+<a class="nav-link" href="#!">
+<div class="nav-link-icon">
+<i data-feather="feather"></i>
+</div>
+Another Link
+</a>
+<a class="nav-link disabled" href="#!">
+<div class="nav-link-icon">
+<i data-feather="feather"></i>
+</div>
+Another Link
+</a>
+</div>
+</div>
+<div class="sidenav-footer">SB Sidenav Footer</div>
+</nav></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="navSidenavPug" role="tabpanel" aria-labelledby="navSidenavPugTab">
+                                        <pre class="language-pug"><code>nav.sidenav.sidenav-light
+.sidenav-menu
+.nav
+.sidenav-menu-heading Heading
+a.nav-link(href='#!')
+.nav-link-icon
+i(data-feather='feather')
+| Link
+a.nav-link(href='#!')
+.nav-link-icon
+i(data-feather='feather')
+| Another Link
+a.nav-link.disabled(href='#!')
+.nav-link-icon
+i(data-feather='feather')
+| Another Link
+.sidenav-footer
+| SB Sidenav Footer</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                The
+                                <code>.sidenav</code>
+                                component extends the default Bootstrap nav component. A working example of the custom sidenav can be seen on the dashboard layout of the Simple UX theme. The sidenav being used in the dashboard layout has a container with certain responsive behaviors, but the component itself can be used on a standalone basis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Custom Sticky Nav Component-->
+            <div id="stickNavComponent">
+                <div class="card mb-4">
+                    <div class="card-header">Custom Sticky Nav Component</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">The sticky menu on the side of this page is a demo of the custom sticky nav component.</div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="navigationStickyTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="navigationStickyHtmlTab" data-bs-toggle="tab" href="#navigationStickyHtml" role="tab" aria-controls="navigationStickyHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="navigationStickyPugTab" data-bs-toggle="tab" href="#navigationStickyPug" role="tab" aria-controls="navigationStickyPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="navigationStickyHtml" role="tabpanel" aria-labelledby="navigationStickyHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="container-fluid">
+<div class="row">
+<!-- Content -->
+<div class="col-lg-9">
+<h2 id="navAnchor1">Nav anchor 1 content</h2>
+<h2 id="navAnchor2">Nav anchor 2 content</h2>
+<h3 id="navAnchorNested">Nested nav anchor content</h3>
+</div>
+
+<!-- Sticky Navigation -->
+<div class="col-lg-3">
+<div class="nav-sticky">
+<div class="card">
+<div class="card-body">
+    <!-- Nav menu -->
+    <ul class="nav flex-column" id="stickyNav">
+        <!-- Nav item -->
+        <li class="nav-item">
+            <a class="nav-link" href="#navAnchor1">Nav Anchor 1</a>
+        </li>
+        <!-- Nav item (with nested items) -->
+        <li class="nav-item">
+            <a class="nav-link" href="#navAnchor2">Nav Anchor 2</a>
+            <!-- Nested nav menu -->
+            <ul class="nav flex-column ml-3">
+                <!-- Nested nav menu item -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#navAnchorNested">Nested Nav Anchor</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="navigationStickyPug" role="tabpanel" aria-labelledby="navigationStickyPugTab">
+                                        <pre class="language-pug"><code>.container-xl.px-4-fluid
+.row
+//- Content
+.col-lg-9
+h2#navAnchor1
+| Nav anchor 1 content
+h2#navAnchor2
+| Nav anchor 2 content
+h3#navAnchorNested
+| Nested nav anchor content
+
+// Sticky Navigation
+.col-lg-3
+.nav-sticky
+.card
+.card-body
+    //- Nav menu
+    ul.nav.flex-column#stickyNav
+        //- Nav item
+        li.nav-item
+            a.nav-link(href='#navAnchor1') Nav Anchor 1
+        //- Nav item (with nested items)
+        li.nav-item
+            a.nav-link(href='#navAnchor2') Nav Anchor 2
+            //- Nested nav menu
+            ul.nav.flex-column.ms-3
+                //- Nested nav menu item
+                li.nav-item
+                    a.nav-link(href='#navAnchorNested') Nested Nav Anchor</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                <p>
+                                    The
+                                    <code>.nav-sticky</code>
+                                    component utilizes the Bootstrap scrollspy functionality along with custom styling to create a sticky navigation component that you can use on inner pages within your application. The right side menu of the style reference pages are all examples of the sticky nav being used. You can set the offset and the scroll behavior of this menu within the
+                                    <code>../assets/js/scripts.js</code>
+                                    file.
+                                </p>
+                                <p class="mb-0">
+                                    The code example above requires the JS to be used, which is included by default in the
+                                    <code>scripts.js</code>
+                                    file. The above example also uses a
+                                    <code>.container-xl.px-4-fluid</code>
+                                    which may not be necessary if your page layout already includes a container.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bootstrap Docs Link-->
+            <div class="card card-icon mb-4">
+                <div class="row g-0">
+                    <div class="col-auto card-icon-aside bg-secondary"><i class="me-1 text-white-50 fab fa-bootstrap"></i></div>
+                    <div class="col">
+                        <div class="card-body py-5">
+                            <h5 class="card-title">Bootstrap Documentation Available</h5>
+                            <p class="card-text">Navs are a default component included with the Bootstrap framework. For more information on implementing, modifying, and extending the usage of Bootstrap nav components within your project, visit the official Bootstrap navs documentation page.</p>
+                            <a class="btn btn-secondary btn-sm" href="https://getbootstrap.com/docs/4.4/components/navs/" target="_blank">
+                                <i class="me-1" data-feather="external-link"></i>
+                                Visit Bootstrap Navs Docs
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sticky Navigation-->
+        <div class="col-lg-3">
+            <div class="nav-sticky">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="nav flex-column" id="stickyNav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#navBordersComponent">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        Nav Borders
+                                        <span class="badge bg-primary-soft text-primary">New</span>
+                                    </div>
+                                </a>
+                                <ul class="nav flex-column ms-3">
+                                    <li class="nav-item"><a class="nav-link" href="#navBordersComponentHorizontal">Horizontal</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#navBordersComponentVertical">Vertical</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#sidenavComponent">Side Navigation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#stickNavComponent">Sticky Navigation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

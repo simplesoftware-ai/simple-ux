@@ -1,0 +1,617 @@
+<header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+    <div class="container-xl px-4">
+        <div class="page-header-content pt-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto mt-4">
+                    <h1 class="page-header-title">
+                        <div class="page-header-icon"><i data-feather="sliders"></i></div>
+                        Progress
+                    </h1>
+                    <div class="page-header-subtitle">Progress indicators to display data within your application</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main page content-->
+<div class="container-xl px-4 mt-n10">
+    <div class="row">
+        <div class="col-lg-9">
+            <!-- Default Bootstrap Progress Indicators-->
+            <div id="default">
+                <div class="card mb-4">
+                    <div class="card-header">Default Bootstrap Progress Indicators</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="progress mb-3"><div class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <div class="progress"><div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="progressDefaultTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="progressDefaultHtmlTab" data-bs-toggle="tab" href="#progressDefaultHtml" role="tab" aria-controls="progressDefaultHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="progressDefaultPugTab" data-bs-toggle="tab" href="#progressDefaultPug" role="tab" aria-controls="progressDefaultPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="progressDefaultHtml" role="tabpanel" aria-labelledby="progressDefaultHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="progressDefaultPug" role="tabpanel" aria-labelledby="progressDefaultPugTab">
+                                        <pre class="language-pug"><code>.progress
+.progress-bar.bg-primary(role='progressbar', style='width: 0%', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100')
+.progress
+.progress-bar.bg-primary(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+.progress
+.progress-bar.bg-primary(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+.progress
+.progress-bar.bg-primary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+.progress
+.progress-bar.bg-primary(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">The width of the progress bar is set by inline CSS in the above examples.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Labelled Progress Indicators-->
+            <div id="labels">
+                <div class="card mb-4">
+                    <div class="card-header">Progress Labels</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="progress mb-3"><div class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div></div>
+                                <div class="progress"><div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div></div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="progressLabelsTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="progressLabelsHtmlTab" data-bs-toggle="tab" href="#progressLabelsHtml" role="tab" aria-controls="progressLabelsHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="progressLabelsPugTab" data-bs-toggle="tab" href="#progressLabelsPug" role="tab" aria-controls="progressLabelsPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="progressLabelsHtml" role="tabpanel" aria-labelledby="progressLabelsHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="progressLabelsPug" role="tabpanel" aria-labelledby="progressLabelsPugTab">
+                                        <pre class="language-pug"><code>.progress
+.progress-bar.bg-primary(role='progressbar', style='width: 0%', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100')
+| 0%
+.progress
+.progress-bar.bg-primary(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+| 25%
+.progress
+.progress-bar.bg-primary(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+| 50%
+.progress
+.progress-bar.bg-primary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| 75%
+.progress
+.progress-bar.bg-primary(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+| 100%</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">Add text within the progress indicator to label the indicator bar.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Colored Progress Indicators-->
+            <div id="colors">
+                <div class="card mb-4">
+                    <div class="card-header">Progress Indicator Colors</div>
+                    <div class="card-body">
+                        <h6 class="small text-muted fw-500">Bootstrap Defaults:</h6>
+                        <!-- Component Preview-->
+                        <div class="sbp-preview mb-4">
+                            <div class="sbp-preview-content">
+                                <div class="progress mb-3"><div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-primary</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-secondary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-secondary</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-success</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-info</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-warning</div></div>
+                                <div class="progress"><div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-danger</div></div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="progressColorsDefaultTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="progressColorsDefaultHtmlTab" data-bs-toggle="tab" href="#progressColorsDefaultHtml" role="tab" aria-controls="progressColorsDefaultHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="progressColorsDefaultPugTab" data-bs-toggle="tab" href="#progressColorsDefaultPug" role="tab" aria-controls="progressColorsDefaultPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="progressColorsDefaultHtml" role="tabpanel" aria-labelledby="progressColorsDefaultHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="progress">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-primary</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-secondary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-secondary</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-success</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-info</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-warning</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-danger</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="progressColorsDefaultPug" role="tabpanel" aria-labelledby="progressColorsDefaultPugTab">
+                                        <pre class="language-pug"><code>.progress
+.progress-bar.bg-primary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-primary
+.progress
+.progress-bar.bg-secondary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-secondary
+.progress
+.progress-bar.bg-success(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-success
+.progress
+.progress-bar.bg-info(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-info
+.progress
+.progress-bar.bg-warning(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-warning
+.progress
+.progress-bar.bg-danger(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-danger</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">The progress bar colors rely on background color utilities to set their color styling.</div>
+                        </div>
+                        <h6 class="small text-muted fw-500">Expanded Color System:</h6>
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="progress mb-3"><div class="progress-bar bg-red" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-red</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-orange" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-orange</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-yellow" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-yellow</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-green" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-green</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-teal" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-teal</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-cyan" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-cyan</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-blue" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-blue</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-indigo" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-indigo</div></div>
+                                <div class="progress mb-3"><div class="progress-bar bg-purple" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-purple</div></div>
+                                <div class="progress"><div class="progress-bar bg-pink" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-pink</div></div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="progressColorsExpandedTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="progressColorsExpandedHtmlTab" data-bs-toggle="tab" href="#progressColorsExpandedHtml" role="tab" aria-controls="progressColorsExpandedHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="progressColorsExpandedPugTab" data-bs-toggle="tab" href="#progressColorsExpandedPug" role="tab" aria-controls="progressColorsExpandedPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="progressColorsExpandedHtml" role="tabpanel" aria-labelledby="progressColorsExpandedHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="progress">
+<div class="progress-bar bg-red" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-red</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-orange" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-orange</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-yellow" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-yellow</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-green" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-green</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-teal" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-teal</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-cyan" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-cyan</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-blue" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-blue</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-indigo" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-indigo</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-purple" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-purple</div>
+</div>
+<div class="progress">
+<div class="progress-bar bg-pink" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">.bg-pink</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="progressColorsExpandedPug" role="tabpanel" aria-labelledby="progressColorsExpandedPugTab">
+                                        <pre class="language-pug"><code>.progress
+.progress-bar.bg-red(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-red
+.progress
+.progress-bar.bg-orange(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-orange
+.progress
+.progress-bar.bg-yellow(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-yellow
+.progress
+.progress-bar.bg-green(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-green
+.progress
+.progress-bar.bg-teal(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-teal
+.progress
+.progress-bar.bg-cyan(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-cyan
+.progress
+.progress-bar.bg-blue(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-blue
+.progress
+.progress-bar.bg-indigo(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-indigo
+.progress
+.progress-bar.bg-purple(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-purple
+.progress
+.progress-bar.bg-pink(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+| .bg-pink</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">You can use the expanded color system background utilities to style a progress bar non-contextually.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Striped Progress Indicators-->
+            <div id="striped">
+                <div class="card mb-4">
+                    <div class="card-header">Striped Progress Indicators</div>
+                    <div class="card-body">
+                        <h6 class="small text-muted fw-500">Basic Striped Indicators:</h6>
+                        <!-- Component Preview-->
+                        <div class="sbp-preview mb-4">
+                            <div class="sbp-preview-content">
+                                <div class="progress mb-3"><div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <div class="progress mb-3"><div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <div class="progress mb-3"><div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <div class="progress"><div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="progressStripedTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="progressStripedHtmlTab" data-bs-toggle="tab" href="#progressStripedHtml" role="tab" aria-controls="progressStripedHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="progressStripedPugTab" data-bs-toggle="tab" href="#progressStripedPug" role="tab" aria-controls="progressStripedPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="progressStripedHtml" role="tabpanel" aria-labelledby="progressStripedHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="progress">
+<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="progressStripedPug" role="tabpanel" aria-labelledby="progressStripedPugTab">
+                                        <pre class="language-pug"><code>.progress
+.progress-bar.progress-bar-striped.bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+.progress
+.progress-bar.progress-bar-striped.bg-info(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+.progress
+.progress-bar.progress-bar-striped.bg-warning(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+.progress
+.progress-bar.progress-bar-striped.bg-danger(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                Use the
+                                <code>.progress-bar-striped</code>
+                                class to use a striped style for your progress indicators.
+                            </div>
+                        </div>
+                        <h6 class="small text-muted fw-500">Animated Striped Indicators:</h6>
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="progress mb-3"><div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <div class="progress mb-3"><div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <div class="progress mb-3"><div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <div class="progress"><div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="progressStripedAnimatedTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="progressStripedAnimatedHtmlTab" data-bs-toggle="tab" href="#progressStripedAnimatedHtml" role="tab" aria-controls="progressStripedAnimatedHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="progressStripedAnimatedPugTab" data-bs-toggle="tab" href="#progressStripedAnimatedPug" role="tab" aria-controls="progressStripedAnimatedPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="progressStripedAnimatedHtml" role="tabpanel" aria-labelledby="progressStripedAnimatedHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="progress">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="progressStripedAnimatedPug" role="tabpanel" aria-labelledby="progressStripedAnimatedPugTab">
+                                        <pre class="language-pug"><code>.progress
+.progress-bar.progress-bar-striped.progress-bar-animated.bg-success(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+.progress
+.progress-bar.progress-bar-striped.progress-bar-animated.bg-info(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+.progress
+.progress-bar.progress-bar-striped.progress-bar-animated.bg-warning(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+.progress
+.progress-bar.progress-bar-striped.progress-bar-animated.bg-danger(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                Use the
+                                <code>.progress-bar-animated</code>
+                                along with the
+                                <code>.progress-bar-striped</code>
+                                class to animate the striped style for your progress indicators.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Progress Bar Card-->
+            <div id="card">
+                <div class="card mb-4">
+                    <div class="card-header">Progress Card</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="card card-progress mb-4">
+                                    <div class="card-header text-danger">25% Progress Card Example</div>
+                                    <div class="card-body">This is an example of a card with a 25% completed progress bar.</div>
+                                    <div class="progress rounded-0"><div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="card card-progress mb-4">
+                                    <div class="card-header text-warning">50% Progress Card Example</div>
+                                    <div class="card-body">This is an example of a card with a 50% completed progress bar.</div>
+                                    <div class="progress rounded-0"><div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="card card-progress mb-4">
+                                    <div class="card-header text-primary">75% Progress Card Example</div>
+                                    <div class="card-body">This is an example of a card with a 75% completed progress bar.</div>
+                                    <div class="progress rounded-0"><div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                                <div class="card card-progress">
+                                    <div class="card-header text-success">100% Progress Card Example</div>
+                                    <div class="card-body">This is an example of a card with a 100% completed progress bar.</div>
+                                    <div class="progress rounded-0"><div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="componentNameTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="componentNameHtmlTab" data-bs-toggle="tab" href="#componentNameHtml" role="tab" aria-controls="componentNameHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="componentNamePugTab" data-bs-toggle="tab" href="#componentNamePug" role="tab" aria-controls="componentNamePug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="componentNameHtml" role="tabpanel" aria-labelledby="componentNameHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="card card-progress">
+<div class="card-header text-danger">25% Progress Card Example</div>
+<div class="card-body">This is an example of a card with a 25% completed progress bar.</div>
+<div class="progress rounded-0">
+<div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+<div class="card card-progress">
+<div class="card-header text-warning">50% Progress Card Example</div>
+<div class="card-body">This is an example of a card with a 50% completed progress bar.</div>
+<div class="progress rounded-0">
+<div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+<div class="card card-progress">
+<div class="card-header text-primary">75% Progress Card Example</div>
+<div class="card-body">This is an example of a card with a 75% completed progress bar.</div>
+<div class="progress rounded-0">
+<div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+<div class="card card-progress">
+<div class="card-header text-success">100% Progress Card Example</div>
+<div class="card-body">This is an example of a card with a 100% completed progress bar.</div>
+<div class="progress rounded-0">
+<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="componentNamePug" role="tabpanel" aria-labelledby="componentNamePugTab">
+                                        <pre class="language-pug"><code>.card.card-progress
+.card-header.text-danger 25% Progress Card Example
+.card-body This is an example of a card with a 25% completed progress bar.
+.progress.rounded-0
+.progress-bar.bg-danger(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+.card.card-progress
+.card-header.text-warning 50% Progress Card Example
+.card-body This is an example of a card with a 50% completed progress bar.
+.progress.rounded-0
+.progress-bar.bg-warning(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+.card.card-progress
+.card-header.text-primary 75% Progress Card Example
+.card-body This is an example of a card with a 75% completed progress bar.
+.progress.rounded-0
+.progress-bar.bg-primary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+.card.card-progress
+.card-header.text-success 100% Progress Card Example
+.card-body This is an example of a card with a 100% completed progress bar.
+.progress.rounded-0
+.progress-bar.bg-success(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                You can combine background utilities and striped options to the progress cards. Make sure to append the
+                                <code>.card-progress</code>
+                                to the
+                                <code>.card</code>
+                                component to apply adjustments to the default progress bar styling.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bootstrap Docs Link-->
+            <div class="card card-icon mb-4">
+                <div class="row g-0">
+                    <div class="col-auto card-icon-aside bg-secondary"><i class="me-1 text-white-50 fab fa-bootstrap"></i></div>
+                    <div class="col">
+                        <div class="card-body py-5">
+                            <h5 class="card-title">Bootstrap Documentation Available</h5>
+                            <p class="card-text">Progress indicators are a default component included with the Bootstrap framework. For more information on implementing, modifying, and extending the usage of progress indicators within your project, visit the official Bootstrap progress documentation page.</p>
+                            <a class="btn btn-secondary btn-sm" href="https://getbootstrap.com/docs/4.4/components/progress/" target="_blank">
+                                <i class="me-1" data-feather="external-link"></i>
+                                Visit Bootstrap Progress Docs
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sticky Navigation-->
+        <div class="col-lg-3">
+            <div class="nav-sticky">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="nav flex-column" id="stickyNav">
+                            <li class="nav-item"><a class="nav-link" href="#default">Default</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#labels">Labels</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#colors">Colors</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#striped">Striped</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#card">Card</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+{
+  "default": {
+    "theme":"default",
+    "target":"/deepAnalysis",
+    "method":"get",
+    "display": true,
+    "columns": 2,
+    "inputs":{
+      "DomainId":{
+        "type":"select",
+        "size":4,
+        "placeholder":"Select Domain Id",
+        "list": "gc.listDomainIds"
+      },
+
+      "iamRoleName":{
+        "type":"text",
+        "size":50,
+        "value": "AthenaAccess",
+        "disabled": true,
+        "placeholder":"enter IAM Role Name, ex) hoeseong@"
+      },
+
+      "Analysis Name":{
+        "type":"select",
+        "size":4,
+        "placeholder":"Select Analysis Name",
+        "list": "gc.listAnalysisNames"
+      },
+
+      "Profile Name":{
+        "type":"select",
+        "size":6,
+        "placeholder":"Select Analysis Name",
+        "list": "gc.listProfileNames"
+      },
+
+      "accountIds":{
+        "type":"text",
+        "size":10,
+        "placeholder":"enter account Ids: ex) 123412341234"
+      },
+
+      "resourceTag":{
+        "type":"select",
+        "size":4,
+        "placeholder":"No",
+        "list": ["Yes"]
+      },
+
+      "discoverAllActiveatedDomainIds":{
+        "type":"select",
+        "size":4,
+        "placeholder":"No",
+        "list": ["Yes"]
+      },
+
+      "debugMode":{
+        "type":"select",
+        "size":4,
+        "placeholder":"No",
+        "list": ["Yes"]
+      },
+
+      "awsCredentials":{
+        "type":"textarea",
+        "size": 12,
+        "rows": 4,
+        "cols": 80,
+        "align":"center",
+        "autocomplete": false,
+        "disabled": true,
+        "placeholder":"Enter the awsCredentials for you to access the Cost Usage Report over Athena!"
+      }
+    },
+    "submits":[
+      {
+        "name": "Run",
+        "target":"/deepAnalysis"
+      }
+    ]
+  }
+}

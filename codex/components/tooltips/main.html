@@ -1,0 +1,191 @@
+<header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+    <div class="container-xl px-4">
+        <div class="page-header-content pt-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto mt-4">
+                    <h1 class="page-header-title">
+                        <div class="page-header-icon"><i data-feather="help-circle"></i></div>
+                        Tooltips
+                    </h1>
+                    <div class="page-header-subtitle">Animated tooltips to provide annotation on content when hovered over</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main page content-->
+<div class="container-xl px-4 mt-n10">
+    <div class="row">
+        <div class="col-lg-9">
+            <!-- Default Bootstrap Tooltips-->
+            <div id="tooltips">
+                <div class="card mb-4">
+                    <div class="card-header">Default Bootstrap Tooltips</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content py-3">
+                                <div class="row">
+                                    <div class="col-auto my-2"><button class="btn btn-primary me-2 mb-2 mb-xl-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Tooltip on top</button></div>
+                                    <div class="col-auto my-2"><button class="btn btn-primary me-2 mb-2 mb-xl-0" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">Tooltip on right</button></div>
+                                    <div class="col-auto my-2"><button class="btn btn-primary me-2 mb-2 mb-xl-0" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button></div>
+                                    <div class="col-auto my-2"><button class="btn btn-primary me-2 mb-2 mb-xl-0" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">Tooltip on left</button></div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="tooltipsExampleTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="tooltipsExampleHtmlTab" data-bs-toggle="tab" href="#tooltipsExampleHtml" role="tab" aria-controls="tooltipsExampleHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tooltipsExamplePugTab" data-bs-toggle="tab" href="#tooltipsExamplePug" role="tab" aria-controls="tooltipsExamplePug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tooltipsExampleHtml" role="tabpanel" aria-labelledby="tooltipsExampleHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><button class="btn btn-primary" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+<button class="btn btn-primary" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">Tooltip on right</button>
+
+<button class="btn btn-primary" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+<button class="btn btn-primary" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">Tooltip on left</button></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="tooltipsExamplePug" role="tabpanel" aria-labelledby="tooltipsExamplePugTab">
+                                        <pre class="language-pug"><code>button.btn.btn-primary(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
+| Tooltip on top
+
+button.btn.btn-primary(type='button', data-bs-toggle='tooltip', data-bs-placement='right', title='Tooltip on right')
+| Tooltip on right
+
+button.btn.btn-primary(type='button', data-bs-toggle='tooltip', data-bs-placement='bottom', title='Tooltip on bottom')
+| Tooltip on bottom
+
+button.btn.btn-primary(type='button', data-bs-toggle='tooltip', data-bs-placement='left', title='Tooltip on left')
+| Tooltip on left</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                <p>Tooltips are visible when an element is hovered over.</p>
+                                By default, using tooltips via data attributes is enabled globally within the Simple UX theme. You can change this default by modifying the
+                                <code>js/scripts.js</code>
+                                file.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Default Bootstrap Popovers-->
+            <div id="popovers">
+                <div class="card mb-4">
+                    <div class="card-header">Default Bootstrap Popovers</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content py-3">
+                                <div class="row">
+                                    <div class="col-auto my-2"><a class="btn btn-primary me-2 mb-2 mb-xl-0" href="#!" tabindex="0" title="Popover Title" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="This popover is on the top!">Popover on top</a></div>
+                                    <div class="col-auto my-2"><a class="btn btn-primary me-2 mb-2 mb-xl-0" href="#!" tabindex="0" title="Popover Title" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This popover is on the right!">Popover on right</a></div>
+                                    <div class="col-auto my-2"><a class="btn btn-primary me-2 mb-2 mb-xl-0" href="#!" tabindex="0" title="Popover Title" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="This popover is on the bottom!">Popover on bottom</a></div>
+                                    <div class="col-auto my-2"><a class="btn btn-primary me-2 mb-2 mb-xl-0" href="#!" tabindex="0" title="Popover Title" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="This popover is on the left!">Popover on left</a></div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="componentNameTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="componentNameHtmlTab" data-bs-toggle="tab" href="#componentNameHtml" role="tab" aria-controls="componentNameHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="componentNamePugTab" data-bs-toggle="tab" href="#componentNamePug" role="tab" aria-controls="componentNamePug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="componentNameHtml" role="tabpanel" aria-labelledby="componentNameHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><a class="btn btn-primary" href="#!" tabindex="0" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="This popover is on the top!" title="Popover Title">Popover on top</a>
+
+<a class="btn btn-primary" href="#!" tabindex="0" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="This popover is on the right!" title="Popover Title">Popover on right</a>
+
+<a class="btn btn-primary" href="#!" tabindex="0" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="This popover is on the bottom!" title="Popover Title">Popover on bottom</a>
+
+<a class="btn btn-primary" href="#!" tabindex="0" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="This popover is on the left!" title="Popover Title">Popover on left</a></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="componentNamePug" role="tabpanel" aria-labelledby="componentNamePugTab">
+                                        <pre class="language-pug"><code>a.btn.btn-primary(href='#!', tabindex='0', title='Popover Title', data-bs-container='body', data-bs-toggle='popover', data-bs-placement='top', data-bs-content='This popover is on the top!')
+| Popover on top
+
+a.btn.btn-primary(href='#!', tabindex='0', title='Popover Title', data-bs-container='body', data-bs-toggle='popover', data-bs-placement='right', data-bs-content='This popover is on the right!')
+| Popover on right
+
+a.btn.btn-primary(href='#!', tabindex='0', title='Popover Title', data-bs-container='body', data-bs-toggle='popover', data-bs-placement='bottom', data-bs-content='This popover is on the bottom!')
+| Popover on bottom
+
+a.btn.btn-primary(href='#!', tabindex='0', title='Popover Title', data-bs-container='body', data-bs-toggle='popover', data-bs-placement='left', data-bs-content='This popover is on the left!')
+| Popover on left</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                <p>Popovers are visible when an element is clicked, or focused.</p>
+                                By default, using popovers via data attributes is enabled globally within the Simple UX theme. You can change this default by modifying the
+                                <code>js/scripts.js</code>
+                                file. The above popovers are dismissable on the user's next click. You can disable this functionality in the
+                                <code>js/scripts.js</code>
+                                file as well.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bootstrap Docs Link-->
+            <div class="card card-icon mb-4">
+                <div class="row g-0">
+                    <div class="col-auto card-icon-aside bg-secondary"><i class="me-1 text-white-50 fab fa-bootstrap"></i></div>
+                    <div class="col">
+                        <div class="card-body py-5">
+                            <h5 class="card-title">Bootstrap Documentation Available</h5>
+                            <p class="card-text">Tooltips and popovers are default components included with the Bootstrap framework. For more information on implementing, modifying, and extending the usage of tooltips and popovers within your project, visit the official Bootstrap documentation.</p>
+                            <a class="btn btn-secondary btn-sm me-2 my-1" href="https://getbootstrap.com/docs/4.4/components/tooltips/" target="_blank">
+                                <i class="me-1" data-feather="external-link"></i>
+                                Visit Bootstrap Tooltips Docs
+                            </a>
+                            <a class="btn btn-secondary btn-sm my-1" href="https://getbootstrap.com/docs/4.4/components/popovers/" target="_blank">
+                                <i class="me-1" data-feather="external-link"></i>
+                                Visit Bootstrap Popovers Docs
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sticky Navigation-->
+        <div class="col-lg-3">
+            <div class="nav-sticky">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="nav flex-column" id="stickyNav">
+                            <li class="nav-item"><a class="nav-link" href="#tooltips">Tooltips</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#popovers">Popovers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

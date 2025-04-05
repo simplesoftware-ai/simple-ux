@@ -1,0 +1,22 @@
+{
+  "name": "ESCROVA LLC",
+  "title": "Invoice",
+  "description": "Welcome!",
+  "topDropdown": {
+    "title": "Invoices",
+    "items": [
+      {
+        "icon": "fa-solid fa-file-invoice",
+        "title": "create",
+        "description": "create a new invoice",
+        "url": "/pages/invoice#create"
+      },
+      {
+        "icon": "fa-solid fa-file-invoice",
+        "title": "search",
+        "description": "search for an invoice",
+        "url": "/pages/invoice#search"
+      }
+    ]
+  }
+}

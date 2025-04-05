@@ -1,0 +1,82 @@
+{
+  "helpModal":{
+    "type":"message",
+    "size": "large",
+    "static": false,
+    "header":"Default Bootstrap Modal - xlarge",
+    "body":"This modal window is included with the Bootstrap framework. The styling has been changed for the Simple UX theme.",
+    "footer":{
+      "Close":{"type":"dismiss","color":"primary"}
+    }
+  },
+  "exampleModal1":{
+    "type":"form",
+    "size": "xlarge",
+    "static": true,
+    "header":"Form Modal Sample",
+    "body":{
+      "content":{
+        "target":"#",
+        "method":"post",
+        "elements":[
+          {
+            "type":"text",
+            "icon": null,
+            "label":"Name",
+            "placeholder":"Enter your name",
+            "required":true
+          },
+          {
+            "type":"email",
+            "icon": null,
+            "label":"Email",
+            "placeholder":"Enter your email",
+            "required":true
+          },
+          {
+            "type":"textarea",
+            "icon": null,
+            "label":"Message",
+            "placeholder":"Enter your message",
+            "required":true
+          }
+        ]
+      }
+    },
+    "footer":{
+      "Close":{"type":"dismiss","color":"secondary"},
+      "Submit":{"type":"submit","class":"primary"}
+    }
+  },
+  "exampleModal2":{
+    "type":"action",
+    "size": "large",
+    "static": false,
+    "header":"Default Bootstrap Modal - large",
+    "body":"This modal window is included with the Bootstrap framework. The styling has been changed for the Simple UX theme.",
+    "footer":{
+      "Close":{"type":"dismiss","color":"secondary"},
+      "Save changes":{"type":"submit","color":"primary"}
+    }
+  },
+  "exampleModal3":{
+    "type":"action",
+    "size": "small",
+    "static": false,
+    "header":"Default Bootstrap Modal - small",
+    "body":"This modal window is included with the Bootstrap framework. The styling has been changed for the Simple UX theme.",
+    "footer":{
+      "Close":{"type":"dismiss","color":"secondary"},
+      "Save changes":{"type":"submit","color":"primary"}
+    }
+  },
+  "exampleModal4":{
+    "type":"message",
+    "static": false,
+    "header":"Default Bootstrap Modal - standard",
+    "body":"This modal window is included with the Bootstrap framework. The styling has been changed for the Simple UX theme.",
+    "footer":{
+      "Close":{"type":"dismiss","color":"primary"}
+    }
+  }
+}

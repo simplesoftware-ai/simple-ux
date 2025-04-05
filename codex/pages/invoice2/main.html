@@ -1,0 +1,136 @@
+<div class="container-xl px-4 mt-4">
+  <!-- Invoice-->
+  <div class="card invoice">
+      <div class="card-header p-4 p-md-5 border-bottom-0 bg-gradient-primary-to-secondary text-white-50">
+          <div class="row justify-content-between align-items-center">
+              <div class="col-12 col-lg-auto mb-5 mb-lg-0 text-center text-lg-start">
+                  <!-- Invoice branding-->
+                  <img class="invoice-brand-img rounded-circle" src="{{ url_for('static', filename='escrova_white.png') }}" alt="" style="object-fit: contain" />
+                  <div class="h2 text-white mb-4">ESCROVA LLC</div>
+                  <div class="h8 text-white mb-0">Enterprise Software Collaboration &amp; Research </div>
+                  <div class="h8 text-white mb-0">for Open-source Value Advancement</div>
+              </div>
+              <div class="col-12 col-lg-auto text-center text-lg-end">
+                  <!-- Invoice details-->
+                  <div class="h3 text-white">Invoice</div>
+                  #481212002
+                  <br />
+                  December 20, 2024
+              </div>
+          </div>
+      </div>
+      <div class="card-body p-4 p-md-5">
+          <!-- Invoice table-->
+          <div class="table-responsive">
+              <table class="table table-borderless mb-0">
+                  <tr class="small text-uppercase text-muted">
+                          <th scope="col">Description</th>
+                          <th class="text-center" scope="col" style="width: 120px">Date</th>
+                          <th class="text-end" scope="col">Hours</th>
+                          <th class="text-end" scope="col">Rate</th>
+                          <th class="text-end" scope="col">Amount</th>
+                      </tr>
+                  </thead>
+                  <tbody> 
+                      <!-- Invoice item 1-->
+                      <tr class="border-bottom">
+                          <td>
+                              <div class="fw-bold">Private Cloud Design Consulation</div>
+                              <div class="small text-muted d-none d-md-block">A consulting service for private cloud architecture on data center, providing expert guidance and design tailored to the customer’s requirements.</div>
+                          </td>
+                          <td class="text-center fw-bold">2024-11-25</td>
+                          <td class="text-end fw-bold">1</td>
+                          <td class="text-end fw-bold">$375.00</td>
+                          <td class="text-end fw-bold">$375.00</td>
+                      </tr>
+                      <!-- Invoice item 2-->
+                      <tr class="border-bottom">
+                          <td>
+                              <div class="fw-bold">Complimentary Service: Private Cloud Design Consulation</div>
+                              <div class="small text-muted d-none d-md-block">A free consulting service for Private Cloud Design</div>
+                          </td>
+                          <td class="text-center fw-bold">2024-12-04</td>
+                          <td class="text-end fw-bold">1</td>
+                          <td class="text-end fw-bold">$0.00</td>
+                          <td class="text-end fw-bold">$0.00</td>
+                      </tr>
+                      <!-- Invoice item 3-->
+                      <tr class="border-bottom">
+                          <td>
+                              <div class="fw-bold">Managed Service Provider Consulation</div>
+                              <div class="small text-muted d-none d-md-block">A consulting service for managed service provider offering, providing expert guidance and design tailored to the  managed service provider's requirements.</div>
+                          </td>
+                          <td class="text-center fw-bold">2024-12-13</td>
+                          <td class="text-end fw-bold">2</td>
+                          <td class="text-end fw-bold">$375.00</td>
+                          <td class="text-end fw-bold">$750.00</td>
+                      </tr>
+                      <!-- Invoice item 4-->
+                      <tr class="border-bottom">
+                        <td>
+                            <div class="fw-bold">Complimentary Service: Authorized Cloud Service Provider Offering</div>
+                            <div class="small text-muted d-none d-md-block">A free consulting service for Authorized Cloud Service Provider Offering</div>
+                        </td>
+                        <td class="text-center fw-bold">2024-12-13</td>
+                        <td class="text-end fw-bold">1</td>
+                        <td class="text-end fw-bold">$0.00</td>
+                        <td class="text-end fw-bold">$0.00</td>
+                    </tr>
+                      <!-- Invoice item 5-->
+                      <tr class="border-bottom">
+                        <td>
+                            <div class="fw-bold">Proposal for Authorized Cloud Service Provider Offering</div>
+                            <div class="small text-muted d-none d-md-block">A proposal for the Authorized Cloud Service Provider Offering</div>
+                        </td>
+                        <td class="text-center fw-bold">2024-12-16</td>
+                        <td class="text-end fw-bold">1</td>
+                        <td class="text-end fw-bold">$625.00</td>
+                        <td class="text-end fw-bold">$625.00</td>
+                    </tr>
+                      <!-- Invoice subtotal-->
+                      <tr>
+                          <td class="text-end pb-0" colspan="3"><div class="text-uppercase small fw-700 text-muted">Subtotal:</div></td>
+                          <td class="text-end pb-0"><div class="h5 mb-0 fw-700">$1,750.00</div></td>
+                      </tr>
+                      <!-- Invoice tax column-->
+                      <tr>
+                          <td class="text-end pb-0" colspan="3"><div class="text-uppercase small fw-700 text-muted">Tax:</div></td>
+                          <td class="text-end pb-0"><div class="h5 mb-0 fw-700">$0.00</div></td>
+                      </tr>
+                      <!-- Invoice total-->
+                      <tr>
+                          <td class="text-end pb-0" colspan="3"><div class="text-uppercase small fw-700 text-muted">Total Amount Due:</div></td>
+                          <td class="text-end pb-0"><div class="h5 mb-0 fw-700 text-green">$1,750.00</div></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+      <div class="card-footer p-4 p-lg-5 border-top-0">
+          <div class="row">
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                  <!-- Invoice - sent to info-->
+                  <div class="small text-muted text-uppercase fw-700 mb-2">To</div>
+                  <div class="h6 mb-0">Steve Ha</div>
+                  <div class="small">TecAce Software, Ltd.</div>
+                  <div class="small">Email: steveha@tecace.com</div>
+                  <div class="small">Phone: (425) 952-6070</div>
+                  <div class="small">Address: 840 140th AVE NE, Bellevue, WA 98005</div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                  <!-- Invoice - sent from info-->
+                  <div class="small text-muted text-uppercase fw-700 mb-2">From</div>
+                  <div class="h6 mb-0">ESCROVA LLC</div>
+                  <div class="small">Email: escrova369@gmail.com</div>
+                  <div class="small">Phone: (206) 792-6332</div>
+                  <div class="small">Address: 2601 183rd Ave NE, Redmond, WA, 98052</div>
+              </div>
+              <div class="col-lg-6">
+                  <!-- Invoice - additional notes-->
+                  <div class="small text-muted text-uppercase fw-700 mb-2">Note</div>
+                  <div class="small mb-0">Thank you for choosing our services! We appreciate the opportunity to support your goals and have included complimentary hours as a value-added benefit. We kindly request prompt payment. Our Tax ID is 99-3929847. If you have any questions regarding this invoice or require further assistance, please don’t hesitate to contact us.</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

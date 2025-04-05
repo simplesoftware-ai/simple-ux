@@ -1,0 +1,23 @@
+{
+  "Copyright": {
+    "icon": " <i data-feather=\"copyright\"></i>",
+    "width": "12",
+    "position": "",
+    "title": " © 2025 ESCROVA LLC",
+    "target": null
+  },
+  "Privacy": {
+    "icon": " <i data-feather=\"shield\"></i>",
+    "width": "12",
+    "position": "",
+    "title": " Privacy Policy",
+    "target": "#!"
+  },
+  "Terms": {
+    "icon": " <i data-feather=\"file-text\"></i>",
+    "width": "12",
+    "position": "",
+    "title": " Terms of Service",
+    "target": "#!"
+  }
+}

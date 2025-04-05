@@ -1,0 +1,621 @@
+<header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+    <div class="container-xl px-4">
+        <div class="page-header-content pt-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto mt-4">
+                    <h1 class="page-header-title">
+                        <div class="page-header-icon"><i data-feather="droplet"></i></div>
+                        Background
+                    </h1>
+                    <div class="page-header-subtitle">Add color to elements and modify backgrounds with our background utilities!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main page content-->
+<div class="container-xl px-4 mt-n10">
+    <div class="row">
+        <div class="col-lg-9">
+            <!-- Bootstrap Default Background Utilities-->
+            <div id="default">
+                <div class="card mb-4">
+                    <div class="card-header">Bootstrap Defaults</div>
+                    <div class="card-body">
+                        <div class="border border-lg rounded">
+                            <div class="p-4 border-bottom">
+                                <div class="bg-primary text-white p-3">.bg-primary</div>
+                                <div class="bg-secondary text-white p-3">.bg-secondary</div>
+                                <div class="bg-success text-white p-3">.bg-success</div>
+                                <div class="bg-danger text-white p-3">.bg-danger</div>
+                                <div class="bg-warning text-white p-3">.bg-warning</div>
+                                <div class="bg-info text-white p-3">.bg-info</div>
+                                <div class="bg-light p-3">.bg-light</div>
+                                <div class="bg-dark text-white p-3">.bg-dark</div>
+                                <div class="bg-white p-3">.bg-white</div>
+                                <div class="bg-transparent p-3">.bg-transparent</div>
+                            </div>
+                            <div class="bg-light p-4 small">
+                                The default Bootstrap background utilities are contextual by nature, and pull from the color palette defined in the
+                                <code>../variables/_colors.scss</code>
+                                file.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Expanded Color System Background Utilities-->
+            <div id="expanded">
+                <div class="card mb-4">
+                    <div class="card-header">Expanded Color System</div>
+                    <div class="card-body">
+                        <div class="border border-lg rounded">
+                            <div class="p-4 border-bottom">
+                                <div class="bg-red text-white p-3">.bg-red</div>
+                                <div class="bg-orange text-white p-3">.bg-orange</div>
+                                <div class="bg-yellow text-white p-3">.bg-yellow</div>
+                                <div class="bg-green text-white p-3">.bg-green</div>
+                                <div class="bg-teal text-white p-3">.bg-teal</div>
+                                <div class="bg-cyan text-white p-3">.bg-cyan</div>
+                                <div class="bg-blue text-white p-3">.bg-blue</div>
+                                <div class="bg-indigo text-white p-3">.bg-indigo</div>
+                                <div class="bg-purple text-white p-3">.bg-purple</div>
+                                <div class="bg-pink text-white p-3">.bg-pink</div>
+                            </div>
+                            <div class="bg-light p-4 small">
+                                Simple UX adds non-contextual colors to the color map so they can be used in the same way you would use Bootstrap colors. These colors are also defined in the color
+                                <code>../variables/_colors.scss</code>
+                                file.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Custom Gradient Background Utilities-->
+            <div id="gradient">
+                <div class="card mb-4">
+                    <div class="card-header">Custom Gradient Background</div>
+                    <div class="card-body">
+                        <div class="border border-lg rounded">
+                            <div class="p-4 border-bottom"><div class="bg-gradient-primary-to-secondary text-white p-3 py-10">.bg-gradient-primary-to-secondary</div></div>
+                            <div class="bg-light p-4 small">The custom gradient background is being used in the page headers, and can be applied anywhere you would use a normal background color utility.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Adaptive Grayscale Background Utilities-->
+            <div id="grayscale">
+                <div class="card mb-4">
+                    <div class="card-header">Adaptive Grayscale</div>
+                    <div class="card-body">
+                        <div class="border border-lg rounded">
+                            <div class="p-4 border-bottom">
+                                <div class="bg-white p-3">.bg-white</div>
+                                <div class="bg-gray-100 p-3">.bg-gray-100</div>
+                                <div class="bg-gray-200 p-3">.bg-gray-200</div>
+                                <div class="bg-gray-300 p-3">.bg-gray-300</div>
+                                <div class="bg-gray-400 p-3">.bg-gray-400</div>
+                                <div class="bg-gray-500 text-white p-3">.bg-gray-500</div>
+                                <div class="bg-gray-600 text-white p-3">.bg-gray-600</div>
+                                <div class="bg-gray-700 text-white p-3">.bg-gray-700</div>
+                                <div class="bg-gray-800 text-white p-3">.bg-gray-800</div>
+                                <div class="bg-gray-900 text-white p-3">.bg-gray-900</div>
+                                <div class="bg-black text-white p-3">.bg-black</div>
+                            </div>
+                            <div class="bg-light p-4 small">
+                                <p>
+                                    The adaptive grayscale is a custom feature in Simple UX. The grayscale is formed by setting a value to the
+                                    <code>$grayscale-base-hue</code>
+                                    variable in the
+                                    <code>../variables/_colors.scss</code>
+                                    file. The base hue, set to blue by default, is then blended with a true black and white grayscale to make a slightly tinted grayscale that is used throughout the theme.
+                                </p>
+                                <p class="mb-0">
+                                    You can use the above utilty classes as background colors for your elements, and you can modify the adaptive grayscale within the
+                                    <code>../variables/_colors.scss</code>
+                                    file.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Custom Background Image Utilities-->
+            <div id="images">
+                <div class="card mb-4">
+                    <div class="card-header">Background Image Utilities</div>
+                    <div class="card-body">
+                        <!-- Background Image Cover Utility-->
+                        <h6 class="small text-muted fw-500" id="defaultSolid">Background Image (Cover):</h6>
+                        <div class="sbp-preview mb-4">
+                            <div class="sbp-preview-content">
+                                <div class="bg-img-cover" style="background-image: url('assets/img/demo/demo-ocean-lg.jpg')"><div style="height: 20rem"></div></div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="backgroundImageCoverTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="backgroundImageCoverHtmlTab" data-bs-toggle="tab" href="#backgroundImageCoverHtml" role="tab" aria-controls="backgroundImageCoverHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="backgroundImageCoverPugTab" data-bs-toggle="tab" href="#backgroundImageCoverPug" role="tab" aria-controls="backgroundImageCoverPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="backgroundImageCoverHtml" role="tabpanel" aria-labelledby="backgroundImageCoverHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="bg-img-cover" style="background-image: url('path/to/image')">
+...
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="backgroundImageCoverPug" role="tabpanel" aria-labelledby="backgroundImageCoverPugTab">
+                                        <pre class="language-pug"><code>.bg-img-cover(style='background-image: url("path/to/image")')
+| ...</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                Use the
+                                <code>.bg-img-cover</code>
+                                utility along with a background image set using inline CSS and the background image will cover the element it is used on.
+                            </div>
+                        </div>
+                        <!-- Background Image Repeat Utility-->
+                        <h6 class="small text-muted fw-500" id="defaultOutline">Background Image (Repeat):</h6>
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="bg-img-repeat bg-primary" style="background-image: url('assets/img/backgrounds/bg-pattern-shapes.png')"><div style="height: 20rem"></div></div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="backgroundImageRepeatTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="backgroundImageRepeatHtmlTab" data-bs-toggle="tab" href="#backgroundImageRepeatHtml" role="tab" aria-controls="backgroundImageRepeatHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="backgroundImageRepeatPugTab" data-bs-toggle="tab" href="#backgroundImageRepeatPug" role="tab" aria-controls="backgroundImageRepeatPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="backgroundImageRepeatHtml" role="tabpanel" aria-labelledby="backgroundImageRepeatHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="bg-img-repeat" style="background-image: url('path/to/pattern')">
+...
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="backgroundImageRepeatPug" role="tabpanel" aria-labelledby="backgroundImageRepeatPugTab">
+                                        <pre class="language-pug"><code>.bg-img-repeat(style='background-image: url("path/to/pattern")')
+| ...</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                Use the
+                                <code>.bg-img-repeat</code>
+                                utility along with a background pattern set using inline CSS and the background image will repeat across the element it is used on. Use a background color utility along with it to add a background color to accompany the pattern.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Overlay Utility-->
+            <div id="overlay">
+                <div class="card mb-4">
+                    <div class="card-header">Background Overlay Utility</div>
+                    <div class="card-body">
+                        <!-- Background Overlay Utility Default-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="bg-img-cover overlay" style="background-image: url('assets/img/demo/demo-ocean-lg.jpg')"><div style="height: 20rem"></div></div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="overlayTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="overlayHtmlTab" data-bs-toggle="tab" href="#overlayHtml" role="tab" aria-controls="overlayHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="overlayPugTab" data-bs-toggle="tab" href="#overlayPug" role="tab" aria-controls="overlayPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="overlayHtml" role="tabpanel" aria-labelledby="overlayHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="bg-img-cover overlay" style="background-image: url('path/to/image')">
+...
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="overlayPug" role="tabpanel" aria-labelledby="overlayPugTab">
+                                        <pre class="language-pug"><code>.bg-img-cover.overlay(style='background-image: url("path/to/image")')
+| ...</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                Use the
+                                <code>.overlay</code>
+                                utility along with a background image to add an overlay to an element. The default overlay adds a 50% dark overlay to the element. There are color and opacity options available as well.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Overlay Utility Opacity-->
+            <div id="overlayOpacity">
+                <div class="card mb-4">
+                    <div class="card-header">Overlay Opacity</div>
+                    <div class="card-body">
+                        <!-- Background Overlay Utility Opacity-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="bg-img-cover overlay overlay-10" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-10</div></div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="bg-img-cover overlay overlay-20" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-20</div></div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="bg-img-cover overlay overlay-30" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-30</div></div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="bg-img-cover overlay overlay-40" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-40</div></div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="bg-img-cover overlay overlay-50" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-50</div></div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="bg-img-cover overlay overlay-60" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-60</div></div>
+                                    </div>
+                                    <div class="col-md-4 mb-4 mb-md-0">
+                                        <div class="bg-img-cover overlay overlay-70" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-70</div></div>
+                                    </div>
+                                    <div class="col-md-4 mb-4 mb-md-0">
+                                        <div class="bg-img-cover overlay overlay-80" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-80</div></div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="bg-img-cover overlay overlay-90" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-90</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="overlayOpacityTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="overlayOpacityHtmlTab" data-bs-toggle="tab" href="#overlayOpacityHtml" role="tab" aria-controls="overlayOpacityHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="overlayOpacityPugTab" data-bs-toggle="tab" href="#overlayOpacityPug" role="tab" aria-controls="overlayOpacityPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="overlayOpacityHtml" role="tabpanel" aria-labelledby="overlayOpacityHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><!-- 10% Overlay -->
+<div class="bg-img-cover overlay overlay-10" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- 20% Overlay -->
+<div class="bg-img-cover overlay overlay-20" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- 30% Overlay -->
+<div class="bg-img-cover overlay overlay-30" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- 40% Overlay -->
+<div class="bg-img-cover overlay overlay-40" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- 50% Overlay -->
+<div class="bg-img-cover overlay overlay-50" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- 60% Overlay -->
+<div class="bg-img-cover overlay overlay-60" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- 70% Overlay -->
+<div class="bg-img-cover overlay overlay-70" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- 80% Overlay -->
+<div class="bg-img-cover overlay overlay-80" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- 90% Overlay -->
+<div class="bg-img-cover overlay overlay-90" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="overlayOpacityPug" role="tabpanel" aria-labelledby="overlayOpacityPugTab">
+                                        <pre class="language-pug"><code>//- 10% Overlay
+.bg-img-cover.overlay.overlay-10(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- 20% Overlay
+.bg-img-cover.overlay.overlay-20(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- 30% Overlay
+.bg-img-cover.overlay.overlay-30(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- 40% Overlay
+.bg-img-cover.overlay.overlay-40(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- 50% Overlay
+.bg-img-cover.overlay.overlay-50(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- 60% Overlay
+.bg-img-cover.overlay.overlay-60(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- 70% Overlay
+.bg-img-cover.overlay.overlay-70(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- 80% Overlay
+.bg-img-cover.overlay.overlay-80(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- 90% Overlay
+.bg-img-cover.overlay.overlay-90(style='background-image: url("path/to/image")')
+.z-1
+| ...</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                Use the
+                                <code>.overlay</code>
+                                utility along with an opacity utility, 10-90, to change the opacity of the overlay.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Overlay Utility Colors-->
+            <div id="overlayColors">
+                <div class="card mb-4">
+                    <div class="card-header">Overlay Colors</div>
+                    <div class="card-body">
+                        <!-- Background Overlay Utility Colors-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="bg-img-cover overlay overlay-primary" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-primary</div></div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="bg-img-cover overlay overlay-secondary" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-secondary</div></div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="bg-img-cover overlay overlay-success" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-success</div></div>
+                                    </div>
+                                    <div class="col-md-4 mb-4 mb-md-0">
+                                        <div class="bg-img-cover overlay overlay-info" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-info</div></div>
+                                    </div>
+                                    <div class="col-md-4 mb-4 mb-md-0">
+                                        <div class="bg-img-cover overlay overlay-warning" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-warning</div></div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="bg-img-cover overlay overlay-danger" style="background-image: url('assets/img/demo/demo-ocean-sm.jpg')"><div class="py-5 px-4 z-1 text-white">.overlay-danger</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="overlayColorsTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="overlayColorsHtmlTab" data-bs-toggle="tab" href="#overlayColorsHtml" role="tab" aria-controls="overlayColorsHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="overlayColorsPugTab" data-bs-toggle="tab" href="#overlayColorsPug" role="tab" aria-controls="overlayColorsPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="overlayColorsHtml" role="tabpanel" aria-labelledby="overlayColorsHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><!-- Primary Overlay -->
+<div class="bg-img-cover overlay overlay-primary" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- Secondary Overlay -->
+<div class="bg-img-cover overlay overlay-secondary" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- Success Overlay -->
+<div class="bg-img-cover overlay overlay-success" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- Info Overlay -->
+<div class="bg-img-cover overlay overlay-info" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- Warning Overlay -->
+<div class="bg-img-cover overlay overlay-warning" style="background-image: url('path/to/image')">
+<div class="z-1">...</div>
+</div>
+
+<!-- Danger Overlay -->
+<div class="bg-img-cover overlay overlay-danger" style="background-image: url('path/to/image')">
+<div class="z-1">...</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="overlayColorsPug" role="tabpanel" aria-labelledby="overlayColorsPugTab">
+                                        <pre class="language-pug"><code>//- Primary Overlay
+.bg-img-cover.overlay.overlay-primary(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- Secondary Overlay
+.bg-img-cover.overlay.overlay-secondary(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- Success Overlay
+.bg-img-cover.overlay.overlay-success(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- Info Overlay
+.bg-img-cover.overlay.overlay-info(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- Warning Overlay
+.bg-img-cover.overlay.overlay-warning(style='background-image: url("path/to/image")')
+.z-1
+| ...
+
+//- Danger Overlay
+.bg-img-cover.overlay.overlay-dagner(style='background-image: url("path/to/image")')
+.z-1
+| ...</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                Use the
+                                <code>.overlay</code>
+                                utility along with an overlay color utility, for example,
+                                <code>.overlay-primary</code>
+                                . You can also use overlay colors that are part of the extended color system, like
+                                <code>.overlay-red</code>
+                                .
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Combining Overlay Utility-->
+            <div id="overlayCombining">
+                <div class="card mb-4">
+                    <div class="card-header">Combining Overlay Utilities</div>
+                    <div class="card-body">
+                        <!-- Combining Overlay Utilities-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="bg-img-cover overlay overlay-70 overlay-primary" style="background-image: url('assets/img/demo/demo-ocean-lg.jpg')"><div style="height: 20rem"></div></div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="overlayCombiningTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="overlayCombiningHtmlTab" data-bs-toggle="tab" href="#overlayCombiningHtml" role="tab" aria-controls="overlayCombiningHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="overlayCombiningPugTab" data-bs-toggle="tab" href="#overlayCombiningPug" role="tab" aria-controls="overlayCombiningPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="overlayCombiningHtml" role="tabpanel" aria-labelledby="overlayCombiningHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><div class="bg-img-cover overlay overlay-70 overlay-primary" style="background-image: url('path/to/image')">
+...
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="overlayCombiningPug" role="tabpanel" aria-labelledby="overlayCombiningPugTab">
+                                        <pre class="language-pug"><code>.bg-img-cover.overlay.overlay-70.overlay-primary(style='background-image: url("path/to/image")')
+| ...</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                The overlay opacity and overlay color utilities can be used together. In the above example, we use the
+                                <code>.overlay</code>
+                                utility with
+                                <code>.overlay-70</code>
+                                and
+                                <code>.overlay-primary</code>
+                                .
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sticky Navigation-->
+        <div class="col-lg-3">
+            <div class="nav-sticky">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="nav flex-column" id="stickyNav">
+                            <li class="nav-item"><a class="nav-link" href="#default">Default</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#expanded">Expanded</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#gradient">Gradient</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#grayscale">Grayscale</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#images">Images</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#overlay">Overlay</a>
+                                <ul class="nav flex-column ms-3">
+                                    <li class="nav-item"><a class="nav-link" href="#overlayOpacity">Opacity</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#overlayColors">Colors</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#overlayCombining">Combining Overlay Utilities</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

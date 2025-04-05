@@ -1,0 +1,30 @@
+{
+  "Copyright": {
+    "width": 7,
+    "position": "left",
+    "icon": "(C)",
+    "title":"ESCROVA LLC 2024",
+    "target": "/copyright"
+  },
+  "Privacy Policy ": {
+    "width": 2,
+    "position": "right",
+    "icon": null,
+    "title":null,
+    "target": "/privacy"
+  },
+  "&middot;": {
+    "width": 1,
+    "position": "center",
+    "icon": null,
+    "title":null,
+    "target": ""
+  },
+  "Terms &amp; Conditions": {
+    "width": 2,
+    "position": "left",
+    "icon": null,
+    "title":null,
+    "target": "/terms"
+  }
+}

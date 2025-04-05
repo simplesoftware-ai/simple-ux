@@ -1,0 +1,134 @@
+{
+  "Core": {
+    "Dashboards": {
+      "__icon__": "activity",
+      "Default": {"__badge__":"Updated"},
+      "Multipurpose": null,
+      "Affiliate": null
+    }
+  },
+  "Custom": {
+    "Pages": {
+      "__icon__": "grid",
+      "Account":{
+        "Profile": null,
+        "Billing": null,
+        "Security": null,
+        "Notifications": null
+        },
+      "Authentication":{
+        "Basic": {  
+          "Login": null,
+          "Register": null,
+          "Forgot Password": null
+        },
+        "Social": {
+          "Login": null,
+          "Register": null,
+          "Forgot Password": null
+        }
+      },
+      "Errors": {
+        "Error 400": null,
+        "Error 401": null,
+        "Error 403": null,
+        "Error 404 1": null,
+        "Error 404 2": null,
+        "Error 500": null,
+        "Error 503": null,
+        "Error 504": null
+      },
+      "Pricing": null,
+      "Invoice": null
+    },
+    "Applications": {
+      "__icon__": "globe",
+      "Knowledge Base": {
+        "Home 1": null,
+        "Home 2": null,
+        "Category": null,
+        "Article": null
+      },
+      "User Management": {
+        "Users List": null,
+        "Edit User": null,
+        "Add User": null,
+        "Groups List": null,
+        "Organization Details": null
+      },
+      "Posts Management": {
+        "Posts List": null,
+        "Create Post": null,
+        "Edit Post": null,
+        "Post Admin": null
+      }
+    },
+    "Flows": {
+      "__icon__": "repeat",
+      "Multi-Tenant Registration": null,
+      "Multi-Tenant Create": null,
+      "Multi-Tenant Join": null,
+      "Multi-Tenant Add User": null,
+      "Wizard": null
+    }
+  },
+  "UI Toolkit": {
+    "Layout": {
+      "__icon__": "layout",
+      "Navigation": {
+        "Static Sidenav": null,
+        "Dark Sidenav": null,
+        "RTL Layout": null
+      },
+      "Container Options": {
+        "Boxed Layout": null,
+        "Fluid Layout": null
+      },
+      "Page Headers": {
+        "Simplified": null,
+        "Compact": null,
+        "Content Overlap": null,
+        "Breadcrumbs": null,
+        "Light": null
+      },
+      "Starter Layouts": {
+        "Default": null,
+        "Minimal": null
+      }
+    },
+    "Components": {
+      "__icon__": "package",
+      "Alerts": null,
+      "Avatars": null,
+      "Badges": null,
+      "Buttons": null,
+      "Cards": {"__badge__":"Updated"},
+      "Dropdowns": null,
+      "Forms": {"__badge__":"Updated"},
+      "Modals": null,
+      "Navigation": null,
+      "Progress": null,
+      "Step": null,
+      "Timeline": null,
+      "Toasts": null,
+      "Tooltips": null
+    },
+    "Utilities": {
+      "__icon__": "tool",
+      "Animations": null,
+      "Background": null,
+      "Borders": null,
+      "Lift": null,
+      "Shadows": null,
+      "Typography": null
+    }
+  },
+  "Plugins": {
+    "Charts": { 
+      "__icon__": "bar-chart"
+    },
+    "Tables": { 
+      "__icon__": "filter"
+    }
+  }
+}

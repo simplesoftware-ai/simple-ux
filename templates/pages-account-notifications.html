@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>{{ codex.conf.name }} :: {{ codex.title }} - {{ codex.description }}</title>
+        <link href="{{ url_for('static', filename='simpleux/css/styles.css') }}" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='simpleux/assets/img/favicon.png') }}" />
+        <script data-search-pseudo-elements defer src="{{ url_for('static', filename='ajax/libs/font-awesome/6.3.0/js/all.min.js') }}" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename='ajax/libs/feather-icons/4.29.0/feather.min.js') }}" crossorigin="anonymous"></script>
+    </head>
+    <body class="nav-fixed">
+        <nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light bg-white" id="sidenavAccordion">
+            <!-- Sidenav Toggle Button-->
+            <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle"><i data-feather="menu"></i></button>
+            <!-- Navbar Brand-->
+            <!-- * * Tip * * You can use text or an image for your navbar brand.-->
+            <!-- * * * * * * When using an image, we recommend the SVG format.-->
+            <!-- * * * * * * Dimensions: Maximum height: 32px, maximum width: 240px-->
+            <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="/">{{ codex.conf.name }}</a>
+            <!-- Navbar Search Input-->
+            <!-- * * Note: * * Visible only on and above the lg breakpoint-->
+            
+            <form class="form-inline me-auto d-none d-lg-block me-3">
+                <div class="input-group input-group-joined input-group-solid">
+                    <input class="form-control pe-0" type="search" placeholder="Search" aria-label="Search" />
+                    <div class="input-group-text"><i data-feather="search"></i></div>
+                </div>
+            </form>
+    
+            <!-- Navbar Items-->
+            <ul class="navbar-nav align-items-center ms-auto">
+                <!-- Documentation Dropdown-->
+                
+                <li class="nav-item dropdown no-caret d-none d-md-block me-3">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="fw-500">Invoices</div>
+                        <i class="fas fa-chevron-right dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end py-0 me-sm-n15 me-lg-0 o-hidden animated--fade-in-up" aria-labelledby="navbarDropdownDocs">
+                        <a class="dropdown-item py-3" href="https://docs.startbootstrap.com/sb-admin-pro" target="_blank">
+                            <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="book"></i></div>
+                            <div>
+                                <div class="small text-gray-500">Documentation</div>
+                                Usage instructions and reference
+                            </div>
+                        </a>
+                        <div class="dropdown-divider m-0"></div>
+                        <a class="dropdown-item py-3" href="https://docs.startbootstrap.com/sb-admin-pro/components" target="_blank">
+                            <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="code"></i></div>
+                            <div>
+                                <div class="small text-gray-500">Components</div>
+                                Code snippets and reference
+                            </div>
+                        </a>
+                        <div class="dropdown-divider m-0"></div>
+                        <a class="dropdown-item py-3" href="https://docs.startbootstrap.com/sb-admin-pro/changelog" target="_blank">
+                            <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="file-text"></i></div>
+                            <div>
+                                <div class="small text-gray-500">Changelog</div>
+                                Updates and changes
+                            </div>
+                        </a>
+                    </div>
+                </li>
+    
+                <!-- Navbar Search Dropdown-->
+                
+                <!-- * * Note: * * Visible only below the lg breakpoint-->
+                <li class="nav-item dropdown no-caret me-3 d-lg-none">
+                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="searchDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="search"></i></a>
+                    <!-- Dropdown - Search-->
+                    <div class="dropdown-menu dropdown-menu-end p-3 shadow animated--fade-in-up" aria-labelledby="searchDropdown">
+                        <form class="form-inline me-auto w-100">
+                            <div class="input-group input-group-joined input-group-solid">
+                                <input class="form-control pe-0" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
+                                <div class="input-group-text"><i data-feather="search"></i></div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+    
+                <!-- Alerts Dropdown-->
+                
+                <li class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
+                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownAlerts" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="bell"></i></a>
+                    <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownAlerts">
+                        <h6 class="dropdown-header dropdown-notifications-header">
+                            <i class="me-2" data-feather="bell"></i>
+                            Alerts Center
+                        </h6>
+                        <!-- Example Alert 1-->
+                        <a class="dropdown-item dropdown-notifications-item" href="#!">
+                            <div class="dropdown-notifications-item-icon bg-warning"><i data-feather="activity"></i></div>
+                            <div class="dropdown-notifications-item-content">
+                                <div class="dropdown-notifications-item-content-details">December 29, 2021</div>
+                                <div class="dropdown-notifications-item-content-text">This is an alert message. It's nothing serious, but it requires your attention.</div>
+                            </div>
+                        </a>
+                        <!-- Example Alert 2-->
+                        <a class="dropdown-item dropdown-notifications-item" href="#!">
+                            <div class="dropdown-notifications-item-icon bg-info"><i data-feather="bar-chart"></i></div>
+                            <div class="dropdown-notifications-item-content">
+                                <div class="dropdown-notifications-item-content-details">December 22, 2021</div>
+                                <div class="dropdown-notifications-item-content-text">A new monthly report is ready. Click here to view!</div>
+                            </div>
+                        </a>
+                        <!-- Example Alert 3-->
+                        <a class="dropdown-item dropdown-notifications-item" href="#!">
+                            <div class="dropdown-notifications-item-icon bg-danger"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="dropdown-notifications-item-content">
+                                <div class="dropdown-notifications-item-content-details">December 8, 2021</div>
+                                <div class="dropdown-notifications-item-content-text">Critical system failure, systems shutting down.</div>
+                            </div>
+                        </a>
+                        <!-- Example Alert 4-->
+                        <a class="dropdown-item dropdown-notifications-item" href="#!">
+                            <div class="dropdown-notifications-item-icon bg-success"><i data-feather="user-plus"></i></div>
+                            <div class="dropdown-notifications-item-content">
+                                <div class="dropdown-notifications-item-content-details">December 2, 2021</div>
+                                <div class="dropdown-notifications-item-content-text">New user request. Woody has requested access to the organization.</div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item dropdown-notifications-footer" href="#!">View All Alerts</a>
+                    </div>
+                </li>
+    
+                <!-- Messages Dropdown-->
+                
+                <li class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
+                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownMessages" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="mail"></i></a>
+                    <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownMessages">
+                        <h6 class="dropdown-header dropdown-notifications-header">
+                            <i class="me-2" data-feather="mail"></i>
+                            Message Center
+                        </h6>
+                        <!-- Example Message 1  -->
+                        <a class="dropdown-item dropdown-notifications-item" href="#!">
+                        
+                            <img class="dropdown-notifications-item-img" src="{{ url_for('static', filename='simpleux/assets/img/illustrations/profiles/profile-2.png') }}" />
+                            <div class="dropdown-notifications-item-content">
+                                <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="dropdown-notifications-item-content-details">Thomas Wilcox · 58m</div>
+                            </div>
+                        </a>
+                        <!-- Example Message 2-->
+                        <a class="dropdown-item dropdown-notifications-item" href="#!">
+                            <img class="dropdown-notifications-item-img" src="{{ url_for('static', filename='simpleux/assets/img/illustrations/profiles/profile-3.png') }}" />
+                            <div class="dropdown-notifications-item-content">
+                                <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="dropdown-notifications-item-content-details">Emily Fowler · 2d</div>
+                            </div>
+                        </a>
+                        <!-- Example Message 3-->
+                        <a class="dropdown-item dropdown-notifications-item" href="#!">
+                            <img class="dropdown-notifications-item-img" src="{{ url_for('static', filename='simpleux/assets/img/illustrations/profiles/profile-4.png') }}" />
+                            <div class="dropdown-notifications-item-content">
+                                <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="dropdown-notifications-item-content-details">Marshall Rosencrantz · 3d</div>
+                            </div>
+                        </a>
+                        <!-- Example Message 4-->
+                        <a class="dropdown-item dropdown-notifications-item" href="#!">
+                            <img class="dropdown-notifications-item-img" src="{{ url_for('static', filename='simpleux/assets/img/illustrations/profiles/profile-5.png') }}" />
+                            <div class="dropdown-notifications-item-content">
+                                <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="dropdown-notifications-item-content-details">Colby Newton · 3d</div>
+                            </div>
+                        </a>
+                        <!-- Footer Link-->
+                        <a class="dropdown-item dropdown-notifications-footer" href="#!">Read All Messages</a>
+                    </div>
+                </li>
+    
+                <!-- User Dropdown-->
+                
+                <li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
+                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="{{ url_for('static', filename='escrova_black.png') }}" /></a>
+                    <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
+                        <h6 class="dropdown-header d-flex align-items-center">
+                            <img class="dropdown-user-img" src="{ url_for('static', filename='simpleux/assets/img/illustrations/profiles/profile-1.png') }" />
+                            <div class="dropdown-user-details">
+                                <div class="dropdown-user-details-name">Valerie Luna</div>
+                                <div class="dropdown-user-details-email">vluna@aol.com</div>
+                            </div>
+                        </h6>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#!">
+                            <div class="dropdown-item-icon"><i data-feather="settings"></i></div>
+                            Account
+                        </a>
+                        <a class="dropdown-item" href="#!">
+                            <div class="dropdown-item-icon"><i data-feather="log-out"></i></div>
+                            Logout
+                        </a>
+                    </div>
+                </li>
+    
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sidenav shadow-right sidenav-light">
+                    <div class="sidenav-menu">
+                        <div class="nav accordion" id="accordionSidenav">
+                            <!-- Sidenav Menu Heading (Account)-->
+                            
+                            <!-- Sidenav Menu Heading (Account)-->
+                            <!-- * * Note: * * Visible only on and above the sm breakpoint-->
+                            <div class="sidenav-menu-heading d-sm-none">Account</div>
+                            <!-- Sidenav Link (Alerts)-->
+                            <!-- * * Note: * * Visible only on and above the sm breakpoint-->
+                            <a class="nav-link d-sm-none" href="#!">
+                                <div class="nav-link-icon"><i data-feather="bell"></i></div>
+                                Alerts
+                                <span class="badge bg-warning-soft text-warning ms-auto">4 New!</span>
+                            </a>
+                            <!-- Sidenav Link (Messages)-->
+                            <!-- * * Note: * * Visible only on and above the sm breakpoint-->
+                            <a class="nav-link d-sm-none" href="#!">
+                                <div class="nav-link-icon"><i data-feather="mail"></i></div>
+                                Messages
+                                <span class="badge bg-success-soft text-success ms-auto">2 New!</span>
+                            </a>
+    
+
+                            <!-- Sidenav Menu Heading (Core)-->
+                            								<!-- Sidenav Menu Heading (Core)-->
+								<div class="sidenav-menu-heading">Core</div>
+								<!-- Sidenav Accordion Menu (Dashboards)-->
+								<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseDashboards" aria-expanded="false" aria-controls="collapseDashboards">
+									<div class="nav-link-icon"><i data-feather="activity"></i></div>
+									Dashboards
+									<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+								</a>
+								<div class="collapse" id="collapseDashboards" data-bs-parent="#accordionSidenav">
+										<nav class="sidenav-menu-nested nav"><!--addNavItemsHtml()::{'Default': {'__badge__': 'Updated'}, 'Multipurpose': None, 'Affiliate': None} -->
+											<a class="nav-link" href="/dashboards/default">
+												Default
+												<span class="badge bg-primary-soft text-primary ms-auto">Updated</span>
+											</a>
+											<a class="nav-link" href="/dashboards/multipurpose">Multipurpose</a>
+											<a class="nav-link" href="/dashboards/affiliate">Affiliate</a>
+										</nav>
+								</div>
+								<!-- Sidenav Menu Heading (Custom)-->
+								<div class="sidenav-menu-heading">Custom</div>
+								<!-- Sidenav Accordion Menu (Pages)-->
+								<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+									<div class="nav-link-icon"><i data-feather="grid"></i></div>
+									Pages
+									<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+								</a>
+								<div class="collapse" id="collapsePages" data-bs-parent="#accordionSidenav">
+									<nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
+										<!-- Nested Sidenav Accordion (Pages -> Account) -->
+										<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAccount" aria-expanded="false" aria-controls="pagesCollapseAccount">
+											Account
+											<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+										</a>
+										<div class="collapse" id="pagesCollapseAccount" data-bs-parent="#accordionSidenavPagesMenu">
+												<nav class="sidenav-menu-nested nav"><!--addAccordionNavHtml(): pages -->
+													<a class="nav-link" href="/pages/account/profile">Profile</a>
+													<a class="nav-link" href="/pages/account/billing">Billing</a>
+													<a class="nav-link" href="/pages/account/security">Security</a>
+													<a class="nav-link" href="/pages/account/notifications">Notifications</a>
+												</nav>
+											</div>
+										<!-- Nested Sidenav Accordion (Pages -> Authentication) -->
+										<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuthentication" aria-expanded="false" aria-controls="pagesCollapseAuthentication">
+											Authentication
+											<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+										</a>
+										<div class="collapse" id="pagesCollapseAuthentication" data-bs-parent="#accordionSidenavPagesMenu">
+											<nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPagesAuthentication">
+												<!-- Nested Sidenav Accordion (Pages -> Authentication -> Basic) -->
+												<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuthenticationBasic" aria-expanded="false" aria-controls="pagesCollapseAuthenticationBasic">
+													Basic
+													<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+												</a>
+												<div class="collapse" id="pagesCollapseAuthenticationBasic" data-bs-parent="#accordionSidenavPagesAuthentication">
+														<nav class="sidenav-menu-nested nav"><!--addAccordionNavHtml(): Pages/authentication -->
+															<a class="nav-link" href="/pages/authentication/basic/login">Login</a>
+															<a class="nav-link" href="/pages/authentication/basic/register">Register</a>
+															<a class="nav-link" href="/pages/authentication/basic/forgot-password">Forgot Password</a>
+														</nav>
+													</div>
+												<!-- Nested Sidenav Accordion (Pages -> Authentication -> Social) -->
+												<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuthenticationSocial" aria-expanded="false" aria-controls="pagesCollapseAuthenticationSocial">
+													Social
+													<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+												</a>
+												<div class="collapse" id="pagesCollapseAuthenticationSocial" data-bs-parent="#accordionSidenavPagesAuthentication">
+														<nav class="sidenav-menu-nested nav"><!--addAccordionNavHtml(): Pages/authentication -->
+															<a class="nav-link" href="/pages/authentication/social/login">Login</a>
+															<a class="nav-link" href="/pages/authentication/social/register">Register</a>
+															<a class="nav-link" href="/pages/authentication/social/forgot-password">Forgot Password</a>
+														</nav>
+													</div>
+											</nav>
+										</div>
+										<!-- Nested Sidenav Accordion (Pages -> Errors) -->
+										<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseErrors" aria-expanded="false" aria-controls="pagesCollapseErrors">
+											Errors
+											<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+										</a>
+										<div class="collapse" id="pagesCollapseErrors" data-bs-parent="#accordionSidenavPagesMenu">
+												<nav class="sidenav-menu-nested nav"><!--addAccordionNavHtml(): pages -->
+													<a class="nav-link" href="/pages/errors/error-400">Error 400</a>
+													<a class="nav-link" href="/pages/errors/error-401">Error 401</a>
+													<a class="nav-link" href="/pages/errors/error-403">Error 403</a>
+													<a class="nav-link" href="/pages/errors/error-404-1">Error 404 1</a>
+													<a class="nav-link" href="/pages/errors/error-404-2">Error 404 2</a>
+													<a class="nav-link" href="/pages/errors/error-500">Error 500</a>
+													<a class="nav-link" href="/pages/errors/error-503">Error 503</a>
+													<a class="nav-link" href="/pages/errors/error-504">Error 504</a>
+												</nav>
+											</div>
+										<a class="nav-link" href="/pages/pricing">Pricing</a>
+										<a class="nav-link" href="/pages/invoice">Invoice</a>
+									</nav>
+								</div>
+								<!-- Sidenav Accordion Menu (Applications)-->
+								<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseApplications" aria-expanded="false" aria-controls="collapseApplications">
+									<div class="nav-link-icon"><i data-feather="globe"></i></div>
+									Applications
+									<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+								</a>
+								<div class="collapse" id="collapseApplications" data-bs-parent="#accordionSidenav">
+									<nav class="sidenav-menu-nested nav accordion" id="accordionSidenavApplications">
+										<!-- Nested Sidenav Accordion (Applications -> Knowledge Base) -->
+										<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseKnowledgeBase" aria-expanded="false" aria-controls="pagesCollapseKnowledgeBase">
+											Knowledge Base
+											<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+										</a>
+										<div class="collapse" id="pagesCollapseKnowledgeBase" data-bs-parent="#accordionSidenavApplicationsMenu">
+												<nav class="sidenav-menu-nested nav"><!--addAccordionNavHtml(): applications -->
+													<a class="nav-link" href="/applications/knowledge-base/home-1">Home 1</a>
+													<a class="nav-link" href="/applications/knowledge-base/home-2">Home 2</a>
+													<a class="nav-link" href="/applications/knowledge-base/category">Category</a>
+													<a class="nav-link" href="/applications/knowledge-base/article">Article</a>
+												</nav>
+											</div>
+										<!-- Nested Sidenav Accordion (Applications -> User Management) -->
+										<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseUserManagement" aria-expanded="false" aria-controls="pagesCollapseUserManagement">
+											User Management
+											<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+										</a>
+										<div class="collapse" id="pagesCollapseUserManagement" data-bs-parent="#accordionSidenavApplicationsMenu">
+												<nav class="sidenav-menu-nested nav"><!--addAccordionNavHtml(): applications -->
+													<a class="nav-link" href="/applications/user-management/users-list">Users List</a>
+													<a class="nav-link" href="/applications/user-management/edit-user">Edit User</a>
+													<a class="nav-link" href="/applications/user-management/add-user">Add User</a>
+													<a class="nav-link" href="/applications/user-management/groups-list">Groups List</a>
+													<a class="nav-link" href="/applications/user-management/organization-details">Organization Details</a>
+												</nav>
+											</div>
+										<!-- Nested Sidenav Accordion (Applications -> Posts Management) -->
+										<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapsePostsManagement" aria-expanded="false" aria-controls="pagesCollapsePostsManagement">
+											Posts Management
+											<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+										</a>
+										<div class="collapse" id="pagesCollapsePostsManagement" data-bs-parent="#accordionSidenavApplicationsMenu">
+												<nav class="sidenav-menu-nested nav"><!--addAccordionNavHtml(): applications -->
+													<a class="nav-link" href="/applications/posts-management/posts-list">Posts List</a>
+													<a class="nav-link" href="/applications/posts-management/create-post">Create Post</a>
+													<a class="nav-link" href="/applications/posts-management/edit-post">Edit Post</a>
+													<a class="nav-link" href="/applications/posts-management/post-admin">Post Admin</a>
+												</nav>
+											</div>
+									</nav>
+								</div>
+								<!-- Sidenav Accordion Menu (Flows)-->
+								<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseFlows" aria-expanded="false" aria-controls="collapseFlows">
+									<div class="nav-link-icon"><i data-feather="repeat"></i></div>
+									Flows
+									<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+								</a>
+								<div class="collapse" id="collapseFlows" data-bs-parent="#accordionSidenav">
+										<nav class="sidenav-menu-nested nav"><!--addNavItemsHtml()::{'Multi-Tenant Registration': None, 'Multi-Tenant Create': None, 'Multi-Tenant Join': None, 'Multi-Tenant Add User': None, 'Wizard': None} -->
+											<a class="nav-link" href="/flows/multi-tenant-registration">Multi-Tenant Registration</a>
+											<a class="nav-link" href="/flows/multi-tenant-create">Multi-Tenant Create</a>
+											<a class="nav-link" href="/flows/multi-tenant-join">Multi-Tenant Join</a>
+											<a class="nav-link" href="/flows/multi-tenant-add-user">Multi-Tenant Add User</a>
+											<a class="nav-link" href="/flows/wizard">Wizard</a>
+										</nav>
+								</div>
+								<!-- Sidenav Menu Heading (UI Toolkit)-->
+								<div class="sidenav-menu-heading">UI Toolkit</div>
+								<!-- Sidenav Accordion Menu (Layout)-->
+								<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseLayout" aria-expanded="false" aria-controls="collapseLayout">
+									<div class="nav-link-icon"><i data-feather="layout"></i></div>
+									Layout
+									<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+								</a>
+								<div class="collapse" id="collapseLayout" data-bs-parent="#accordionSidenav">
+									<nav class="sidenav-menu-nested nav accordion" id="accordionSidenavLayout">
+										<!-- Nested Sidenav Accordion (Layout -> Navigation) -->
+										<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseNavigation" aria-expanded="false" aria-controls="pagesCollapseNavigation">
+											Navigation
+											<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+										</a>
+										<div class="collapse" id="pagesCollapseNavigation" data-bs-parent="#accordionSidenavLayoutMenu">
+												<nav class="sidenav-menu-nested nav"><!--addAccordionNavHtml(): layout -->
+													<a class="nav-link" href="/layout/navigation/static-sidenav">Static Sidenav</a>
+													<a class="nav-link" href="/layout/navigation/dark-sidenav">Dark Sidenav</a>
+													<a class="nav-link" href="/layout/navigation/rtl-layout">RTL Layout</a>
+												</nav>
+											</div>
+										<!-- Nested Sidenav Accordion (Layout -> Container Options) -->
+										<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseContainerOptions" aria-expanded="false" aria-controls="pagesCollapseContainerOptions">
+											Container Options
+											<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+										</a>
+										<div class="collapse" id="pagesCollapseContainerOptions" data-bs-parent="#accordionSidenavLayoutMenu">
+												<nav class="sidenav-menu-nested nav"><!--addAccordionNavHtml(): layout -->
+													<a class="nav-link" href="/layout/container-options/boxed-layout">Boxed Layout</a>
+													<a class="nav-link" href="/layout/container-options/fluid-layout">Fluid Layout</a>
+												</nav>
+											</div>
+										<!-- Nested Sidenav Accordion (Layout -> Page Headers) -->
+										<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapsePageHeaders" aria-expanded="false" aria-controls="pagesCollapsePageHeaders">
+											Page Headers
+											<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+										</a>
+										<div class="collapse" id="pagesCollapsePageHeaders" data-bs-parent="#accordionSidenavLayoutMenu">
+												<nav class="sidenav-menu-nested nav"><!--addAccordionNavHtml(): layout -->
+													<a class="nav-link" href="/layout/page-headers/simplified">Simplified</a>
+													<a class="nav-link" href="/layout/page-headers/compact">Compact</a>
+													<a class="nav-link" href="/layout/page-headers/content-overlap">Content Overlap</a>
+													<a class="nav-link" href="/layout/page-headers/breadcrumbs">Breadcrumbs</a>
+													<a class="nav-link" href="/layout/page-headers/light">Light</a>
+												</nav>
+											</div>
+										<!-- Nested Sidenav Accordion (Layout -> Starter Layouts) -->
+										<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseStarterLayouts" aria-expanded="false" aria-controls="pagesCollapseStarterLayouts">
+											Starter Layouts
+											<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+										</a>
+										<div class="collapse" id="pagesCollapseStarterLayouts" data-bs-parent="#accordionSidenavLayoutMenu">
+												<nav class="sidenav-menu-nested nav"><!--addAccordionNavHtml(): layout -->
+													<a class="nav-link" href="/layout/starter-layouts/default">Default</a>
+													<a class="nav-link" href="/layout/starter-layouts/minimal">Minimal</a>
+												</nav>
+											</div>
+									</nav>
+								</div>
+								<!-- Sidenav Accordion Menu (Components)-->
+								<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseComponents" aria-expanded="false" aria-controls="collapseComponents">
+									<div class="nav-link-icon"><i data-feather="package"></i></div>
+									Components
+									<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+								</a>
+								<div class="collapse" id="collapseComponents" data-bs-parent="#accordionSidenav">
+										<nav class="sidenav-menu-nested nav"><!--addNavItemsHtml()::{'Alerts': None, 'Avatars': None, 'Badges': None, 'Buttons': None, 'Cards': {'__badge__': 'Updated'}, 'Dropdowns': None, 'Forms': {'__badge__': 'Updated'}, 'Modals': None, 'Navigation': None, 'Progress': None, 'Step': None, 'Timeline': None, 'Toasts': None, 'Tooltips': None} -->
+											<a class="nav-link" href="/components/alerts">Alerts</a>
+											<a class="nav-link" href="/components/avatars">Avatars</a>
+											<a class="nav-link" href="/components/badges">Badges</a>
+											<a class="nav-link" href="/components/buttons">Buttons</a>
+											<a class="nav-link" href="/components/cards">
+												Cards
+												<span class="badge bg-primary-soft text-primary ms-auto">Updated</span>
+											</a>
+											<a class="nav-link" href="/components/dropdowns">Dropdowns</a>
+											<a class="nav-link" href="/components/forms">
+												Forms
+												<span class="badge bg-primary-soft text-primary ms-auto">Updated</span>
+											</a>
+											<a class="nav-link" href="/components/modals">Modals</a>
+											<a class="nav-link" href="/components/navigation">Navigation</a>
+											<a class="nav-link" href="/components/progress">Progress</a>
+											<a class="nav-link" href="/components/step">Step</a>
+											<a class="nav-link" href="/components/timeline">Timeline</a>
+											<a class="nav-link" href="/components/toasts">Toasts</a>
+											<a class="nav-link" href="/components/tooltips">Tooltips</a>
+										</nav>
+								</div>
+								<!-- Sidenav Accordion Menu (Utilities)-->
+								<a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseUtilities" aria-expanded="false" aria-controls="collapseUtilities">
+									<div class="nav-link-icon"><i data-feather="tool"></i></div>
+									Utilities
+									<div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+								</a>
+								<div class="collapse" id="collapseUtilities" data-bs-parent="#accordionSidenav">
+										<nav class="sidenav-menu-nested nav"><!--addNavItemsHtml()::{'Animations': None, 'Background': None, 'Borders': None, 'Lift': None, 'Shadows': None, 'Typography': None} -->
+											<a class="nav-link" href="/utilities/animations">Animations</a>
+											<a class="nav-link" href="/utilities/background">Background</a>
+											<a class="nav-link" href="/utilities/borders">Borders</a>
+											<a class="nav-link" href="/utilities/lift">Lift</a>
+											<a class="nav-link" href="/utilities/shadows">Shadows</a>
+											<a class="nav-link" href="/utilities/typography">Typography</a>
+										</nav>
+								</div>
+								<!-- Sidenav Menu Heading (Plugins)-->
+								<div class="sidenav-menu-heading">Plugins</div>
+								<!-- Sidenav Link (Charts)-->
+								<a class="nav-link" href="/charts">
+									<div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+									Charts
+								</a>
+								<!-- Sidenav Link (Tables)-->
+								<a class="nav-link" href="/tables">
+									<div class="nav-link-icon"><i data-feather="filter"></i></div>
+									Tables
+								</a>
+
+                        </div>
+                    </div>
+                    <!-- Sidenav Footer-->
+                    
+                    <div class="sidenav-footer">
+                        <div class="sidenav-footer-content">
+                            <div class="sidenav-footer-subtitle">Logged in as:</div>
+                            <div class="sidenav-footer-title">Valerie Luna</div>
+                        </div>
+                    </div>
+    
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <!-- Main page content-->
+                    <!-- Main page content-->
+<header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
+    <div class="container-xl px-4">
+        <div class="page-header-content">
+            <div class="row align-items-center justify-content-between pt-3">
+                <div class="col-auto mb-3">
+                    <h1 class="page-header-title">
+                        <div class="page-header-icon"><i data-feather="user"></i></div>
+                        Account Settings - Notifications
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main page content-->
+<div class="container-xl px-4 mt-4">
+    <!-- Account page navigation-->
+    <nav class="nav nav-borders">
+        <a class="nav-link ms-0" href="account-profile.html">Profile</a>
+        <a class="nav-link" href="account-billing.html">Billing</a>
+        <a class="nav-link" href="account-security.html">Security</a>
+        <a class="nav-link active" href="account-notifications.html">Notifications</a>
+    </nav>
+    <hr class="mt-0 mb-4" />
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Email notifications preferences card-->
+            <div class="card card-header-actions mb-4">
+                <div class="card-header">
+                    Email Notifications
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" checked />
+                        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <!-- Form Group (default email)-->
+                        <div class="mb-3">
+                            <label class="small mb-1" for="inputNotificationEmail">Default notification email</label>
+                            <input class="form-control" id="inputNotificationEmail" type="email" value="name@example.com" disabled />
+                        </div>
+                        <!-- Form Group (email updates checkboxes)-->
+                        <div class="mb-0">
+                            <label class="small mb-2">Choose which types of email updates you receive</label>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" id="checkAccountChanges" type="checkbox" checked />
+                                <label class="form-check-label" for="checkAccountChanges">Changes made to your account</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" id="checkAccountGroups" type="checkbox" checked />
+                                <label class="form-check-label" for="checkAccountGroups">Changes are made to groups you're part of</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" id="checkProductUpdates" type="checkbox" checked />
+                                <label class="form-check-label" for="checkProductUpdates">Product updates for products you've purchased or starred</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" id="checkProductNew" type="checkbox" checked />
+                                <label class="form-check-label" for="checkProductNew">Information on new products and services</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" id="checkPromotional" type="checkbox" />
+                                <label class="form-check-label" for="checkPromotional">Marketing and promotional offers</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" id="checkSecurity" type="checkbox" checked disabled />
+                                <label class="form-check-label" for="checkSecurity">Security alerts</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- SMS push notifications card-->
+            <div class="card card-header-actions mb-4">
+                <div class="card-header">
+                    Push Notifications
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" id="smsToggleSwitch" type="checkbox" checked />
+                        <label class="form-check-label" for="smsToggleSwitch"></label>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <!-- Form Group (default SMS number)-->
+                        <div class="mb-3">
+                            <label class="small mb-1" for="inputNotificationSms">Default SMS number</label>
+                            <input class="form-control" id="inputNotificationSms" type="tel" value="123-456-7890" disabled />
+                        </div>
+                        <!-- Form Group (SMS updates checkboxes)-->
+                        <div class="mb-0">
+                            <label class="small mb-2">Choose which types of push notifications you receive</label>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" id="checkSmsComment" type="checkbox" checked />
+                                <label class="form-check-label" for="checkSmsComment">Someone comments on your post</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" id="checkSmsShare" type="checkbox" />
+                                <label class="form-check-label" for="checkSmsShare">Someone shares your post</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" id="checkSmsFollow" type="checkbox" checked />
+                                <label class="form-check-label" for="checkSmsFollow">A user follows your account</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" id="checkSmsGroup" type="checkbox" />
+                                <label class="form-check-label" for="checkSmsGroup">New posts are made in groups you're part of</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" id="checkSmsPrivateMessage" type="checkbox" checked />
+                                <label class="form-check-label" for="checkSmsPrivateMessage">You receive a private message</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <!-- Notifications preferences card-->
+            <div class="card">
+                <div class="card-header">Notification Preferences</div>
+                <div class="card-body">
+                    <form>
+                        <!-- Form Group (notification preference checkboxes)-->
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="checkAutoGroup" type="checkbox" checked />
+                            <label class="form-check-label" for="checkAutoGroup">Automatically subscribe to group notifications</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" id="checkAutoProduct" type="checkbox" />
+                            <label class="form-check-label" for="checkAutoProduct">Automatically subscribe to new product notifications</label>
+                        </div>
+                        <!-- Submit button-->
+                        <button class="btn btn-danger-soft text-danger">Unsubscribe from all notifications</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </main>
+                <footer class="footer-admin mt-auto footer-light">
+                    
+                        <div class="container-xl px-4">
+                            <!-- Begin: Footer Row -->
+                            <div class="row">
+                                <div class="col-md-6 small">Copyright &copy; ESCROVA LLC 2024</div>
+                                <div class="col-md-6 text-md-end small">
+                                    <a href="#!">Privacy Policy</a>
+                                    &middot;
+                                    <a href="#!">Terms &amp; Conditions</a>
+                                </div>
+                            </div>
+                            <!-- End: Footer Row -->
+                        </div>
+        
+                </footer>
+                {% if codex.debug %}
+                    <div>
+                        {{ codex | iterate | safe }}
+                    </div>
+                {% endif %} 
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='bootstrap/5.3.3/dist/js/bootstrap.bundle.min.js') }}" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename='simpleux/js/scripts.js') }}"></script>
+    </body>
+</html>

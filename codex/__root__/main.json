@@ -1,0 +1,370 @@
+{
+  "header":{
+    "icon": "activity",
+    "title": "+Landing Page",
+    "subtitle": "Example landing page and components examples",
+    "body":{
+      "search":{
+        "type": "calendar",
+        "icon": "calendar",
+        "id": "litepickerRangePlugin",
+        "placeholder": "Select date range..."
+      },
+      "actions":{
+        "type": "dropdown",
+        "elements":[
+          {
+            "type":"link",
+            "icon": "calendar",
+            "delimiter": true,
+            "label": "Home",
+            "target": "/"
+          },
+          {
+            "type":"modal",
+            "icon": "calendar",
+            "delimiter": true,
+            "label": "Modal#1 (xlarge/static)",
+            "target": "exampleModal1"
+          },
+          {
+            "type":"modal",
+            "icon": "calendar",
+            "delimiter": true,
+            "label": "Modal#2 (large)",
+            "target": "exampleModal2"
+          },
+          {
+            "type":"modal",
+            "icon": "calendar",
+            "delimiter": true,
+            "label": "Modal#3 (small)",
+            "target": "exampleModal3"
+          },
+          {
+            "type":"modal",
+            "icon": "calendar",
+            "delimiter": true,
+            "label": "Modal#4 (standard)",
+            "target": "exampleModal4"
+          }
+        ]
+      }
+    }
+  },
+  "body":[
+    {
+      "type":"box",
+      "width": 12,
+      "title":"Welcome to Simple UX!",
+      "content": "Browse our fully designed UI toolkit! Browse our prebuilt app pages, components, and utilites, and be sure to look at our full documentation!",
+      "image": "simpleux/assets/img/illustrations/at-work.svg"
+    },
+    { "type": "divider" },
+    {
+      "type":"form",
+      "width": 9,
+      "title":"Registeration",
+      "actions":[
+        {
+          "type":"link",
+          "icon": "calendar",
+          "delimiter": true,
+          "label": "Home",
+          "target": "/"
+        },
+        {
+          "type":"modal",
+          "icon": "calendar",
+          "delimiter": true,
+          "label": "Modal#1 (xlarge/static)",
+          "target": "exampleModal1"
+        },
+        {
+          "type":"modal",
+          "icon": "calendar",
+          "delimiter": true,
+          "label": "Commerce",
+          "target": "exampleCommerce",
+          "effect": "badge bg-green-soft text-green my-1"
+        },
+        {
+          "type":"modal",
+          "icon": "calendar",
+          "delimiter": true,
+          "label": "Reporting",
+          "target": "exampleModal3",
+          "effect": "badge bg-blue-soft text-blue my-1"
+        },
+        {
+          "type":"modal",
+          "icon": "calendar",
+          "delimiter": true,
+          "label": "Server",
+          "target": "exampleModal4",
+          "effect": "badge bg-yellow-soft text-yellow my-1"
+        },
+        {
+          "type":"modal",
+          "icon": "calendar",
+          "delimiter": true,
+          "label": "Users",
+          "target": "exampleModal4",
+          "effect": "badge bg-purple-soft text-purple my-1"
+        }
+      ],
+      "data":"defalut"
+    },
+    {
+      "type":"form",
+      "width": 3,
+      "title":"Reset",
+      "data":"reset"
+    },
+    { "type": "divider" },
+    {
+      "type":"timeline",
+      "width":"6",
+      "title": "Recent Activity",
+      "actions":[
+        {
+          "type":"link",
+          "icon":null,
+          "class":"badge bg-green-soft text-green my-1",
+          "label": "Commerce",
+          "target": "#!"
+        },
+        {
+          "type":"link",
+          "icon":null,
+          "class":"badge bg-blue-soft text-blue my-1",
+          "label": "Reporting",
+          "target": "#!"
+        },
+        {
+          "type":"link",
+          "icon":null,
+          "class":"badge bg-yellow-soft text-yellow my-1",
+          "label": "Server",
+          "target": "#!"
+        },
+        {
+          "type":"link",
+          "icon":null,
+          "class":"badge bg-purple-soft text-purple my-1",
+          "label": "Users",
+          "target": "#!"
+        }
+      ]
+    },
+    {
+      "type":"progress",
+      "width":"6",
+      "title":"Progress",
+      "data":[
+        {
+          "label":"Server Migration",
+          "color": "danger",
+          "width": "20%",
+          "value": "20%"
+        },
+        {
+          "label":"Sales Tracking",
+          "color": "warning",
+          "width": "40%",
+          "value": "40%"
+        },
+        {
+          "label":"Customer Database",
+          "color": "warning",
+          "width": "60%",
+          "value": "60%"
+        },
+        {
+          "label":"Payout Details",
+          "color": "info",
+          "width": "80%",
+          "value": "80%"
+        },
+        {
+          "label":"Account Setu",
+          "color": "success",
+          "width": "100%",
+          "value": "Complete!"
+        }
+      ],
+      "actions":[
+        {
+          "type":"link",
+          "icon":"list",
+          "class":"text-gray-500",
+          "label": "Manage Tasks",
+          "target": "#!"
+        },
+        {
+          "type":"link",
+          "icon":"plus-circle",
+          "class":"text-gray-500",
+          "label": "Add New Task",
+          "target": "#!"
+        },
+        {
+          "type":"link",
+          "icon":"minus-circle",
+          "class":"text-gray-500",
+          "label": "Delete Tasks",
+          "target": "#!"
+        }
+      ]
+    },
+    { "type": "divider" },
+    {
+      "type":"tile",
+      "width":"3",
+      "title": "Earnings (Monthly)",
+      "icon": "calendar",
+      "background": "primary",
+      "color": "white",
+      "content": "$40,000",
+      "action":{
+        "type":"link",
+        "label": "View Report",
+        "target": "/earnings"
+      }
+    },
+    {
+      "type":"tile",
+      "width":"3",
+      "title": "Earnings (Annual)",
+      "icon": "dollar-sign",
+      "background": "warning",
+      "color": "white",
+      "content": "$215,000",
+      "action":{
+        "type":"link",
+        "label": "View Report",
+        "target": "/earnings"
+      }
+    },
+    {
+      "type":"tile",
+      "width":"3",
+      "title": "Task Completion",
+      "icon": "dollar-sign",
+      "background": "success",
+      "color": "white",
+      "content": "24",
+      "action":{
+        "type":"modal",
+        "label": "View Tasks",
+        "target": "taskCompletionModal"
+      }
+    },
+    {
+      "type":"tile",
+      "width":"3",
+      "title": "Pending Requests",
+      "icon": "dollar-sign",
+      "background": "danger",
+      "color": "white",
+      "content": "177",
+      "action":{
+        "type":"modal",
+        "label": "View Requests",
+        "target": "pendingRequestsModal"
+      }
+    },
+    { "type": "divider" },
+    {
+      "type":"chart",
+      "width":"6",
+      "title": "Earnings Breakdown",
+      "id":"myLineChart",
+      "actions":[
+        {
+          "type":"link",
+          "icon":null,
+          "label": "Last 12 Months",
+          "target": "#!"
+        },
+        {
+          "type":"link",
+          "icon":null,
+          "label": "Last 30 Days",
+          "target": "#!"
+        },
+        {
+          "type":"link",
+          "icon":null,
+          "label": "Last 7 Days",
+          "target": "#!"
+        },
+        {
+          "type":"link",
+          "icon":null,
+          "label": "This Month",
+          "target": "#!"
+        },
+        {
+          "type":"divider"
+        },
+        {
+          "type":"link",
+          "icon":null,
+          "label": "Custom Range+",
+          "target": "#!"
+        }
+      ]
+    },
+    {
+        "type":"chart",
+        "width":"6",
+        "title": "Monthly Revenue",
+        "id":"myBarChart",
+        "actions":[
+          {
+            "type":"link",
+            "icon":null,
+            "label": "Last 12 Months",
+            "target": "#!"
+          },
+          {
+            "type":"link",
+            "icon":null,
+            "label": "Last 30 Days",
+            "target": "#!"
+          },
+          {
+            "type":"link",
+            "icon":null,
+            "label": "Last 7 Days",
+            "target": "#!"
+          },
+          {
+            "type":"link",
+            "icon":null,
+            "label": "This Month",
+            "target": "#!"
+          },
+          {
+            "type":"divider"
+          },
+          {
+            "type":"link",
+            "icon":null,
+            "label": "Custom Range",
+            "target": "#!"
+          }
+        ]
+    },
+    { "type": "divider" },
+    {
+      "type":"table",
+      "width":"6",
+      "title":"Earnings Breakdown+",
+      "id": "datatablesSimple",
+      "labels":"codex.table.labels",
+      "rows":"codex.table.rows"
+    }
+  ]
+}

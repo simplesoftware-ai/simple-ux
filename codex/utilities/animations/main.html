@@ -1,0 +1,169 @@
+<header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+    <div class="container-xl px-4">
+        <div class="page-header-content pt-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto mt-4">
+                    <h1 class="page-header-title">
+                        <div class="page-header-icon"><i data-feather="film"></i></div>
+                        Animations
+                    </h1>
+                    <div class="page-header-subtitle">Custom animation utilities to add motion to your transitioning content</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main page content-->
+<div class="container-xl px-4 mt-n10">
+    <div class="row">
+        <div class="col-lg-9">
+            <!-- Fade In Transition-->
+            <div id="fadeIn">
+                <div class="card mb-4">
+                    <div class="card-header">Fade In Transition</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" id="dropdownFadeIn" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click Me!</button>
+                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownFadeIn">
+                                        <a class="dropdown-item" href="#!">Action</a>
+                                        <a class="dropdown-item" href="#!">Another action</a>
+                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="animationFadeInExampleTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="animationFadeInExampleHtmlTab" data-bs-toggle="tab" href="#animationFadeInExampleHtml" role="tab" aria-controls="animationFadeInExampleHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="animationFadeInExamplePugTab" data-bs-toggle="tab" href="#animationFadeInExamplePug" role="tab" aria-controls="animationFadeInExamplePug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="animationFadeInExampleHtml" role="tabpanel" aria-labelledby="animationFadeInExampleHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><!-- Fade In Animation -->
+<div class="dropdown">
+<button class="btn btn-primary dropdown-toggle" id="dropdownFadeIn" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click Me!</button>
+<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownFadeIn">
+<a class="dropdown-item" href="#!">Action</a>
+<a class="dropdown-item" href="#!">Another action</a>
+<a class="dropdown-item" href="#!">Something else here</a>
+</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="animationFadeInExamplePug" role="tabpanel" aria-labelledby="animationFadeInExamplePugTab">
+                                        <pre class="language-pug"><code>//- Fade In Animation
+.dropdown
+button#dropdownFadeIn.btn.btn-primary.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+| Click Me!
+.dropdown-menu.animated--fade-in(aria-labelledby='dropdownFadeIn')
+a.dropdown-item(href='#!') Action
+a.dropdown-item(href='#!') Another action
+a.dropdown-item(href='#!') Something else here</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                The fade in utility can be used by adding
+                                <code>.animated--fade-in</code>
+                                to an element. In the above example, it is being used along with a Bootstrap dropdown menu.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fade In Up Transition-->
+            <div id="fadeInUp">
+                <div class="card mb-4">
+                    <div class="card-header">Fade In Up Transition</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" id="dropdownFadeIn" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click Me!</button>
+                                    <div class="dropdown-menu animated--fade-in-up" aria-labelledby="dropdownFadeIn">
+                                        <a class="dropdown-item" href="#!">Action</a>
+                                        <a class="dropdown-item" href="#!">Another action</a>
+                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="animationFadeInUpExampleTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="animationFadeInUpExampleHtmlTab" data-bs-toggle="tab" href="#animationFadeInUpExampleHtml" role="tab" aria-controls="animationFadeInUpExampleHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="animationFadeInUpExamplePugTab" data-bs-toggle="tab" href="#animationFadeInUpExamplePug" role="tab" aria-controls="animationFadeInUpExamplePug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="animationFadeInUpExampleHtml" role="tabpanel" aria-labelledby="animationFadeInUpExampleHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><!-- Fade In Up Animation -->
+<div class="dropdown">
+<button class="btn btn-secondary dropdown-toggle" id="dropdownFadeIn" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click Me!</button>
+<div class="dropdown-menu animated--fade-in-up" aria-labelledby="dropdownFadeIn">
+<a class="dropdown-item" href="#!">Action</a>
+<a class="dropdown-item" href="#!">Another action</a>
+<a class="dropdown-item" href="#!">Something else here</a>
+</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="animationFadeInUpExamplePug" role="tabpanel" aria-labelledby="animationFadeInUpExamplePugTab">
+                                        <pre class="language-pug"><code>//- Fade In Up Animation
+.dropdown
+button#dropdownFadeIn.btn.btn-secondary.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+| Click Me!
+.dropdown-menu.animated--fade-in-up(aria-labelledby='dropdownFadeIn')
+a.dropdown-item(href='#!') Action
+a.dropdown-item(href='#!') Another action
+a.dropdown-item(href='#!') Something else here</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                The fade in up utility can be used by adding
+                                <code>.animated--fade-in-up</code>
+                                to an element. In the above example, it is being used along with a Bootstrap dropdown menu.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sticky Navigation-->
+        <div class="col-lg-3">
+            <div class="nav-sticky">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="nav flex-column" id="stickyNav">
+                            <li class="nav-item"><a class="nav-link" href="#fadeIn">Fade In</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#fadeInUp">Fade In Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

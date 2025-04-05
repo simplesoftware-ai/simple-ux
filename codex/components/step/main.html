@@ -1,0 +1,607 @@
+<header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+    <div class="container-xl px-4">
+        <div class="page-header-content pt-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto mt-4">
+                    <h1 class="page-header-title">
+                        <div class="page-header-icon"><i data-feather="more-horizontal"></i></div>
+                        Step
+                    </h1>
+                    <div class="page-header-subtitle">A step component to use with form wizards or any element that needs a vertical step navigation</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main page content-->
+<div class="container-xl px-4 mt-n10">
+    <div class="row">
+        <div class="col-lg-9">
+            <!-- Basic Step Component-->
+            <div id="basic">
+                <div class="card mb-4">
+                    <div class="card-header">Basic Step Component</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="step mb-5">
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 2</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                </div>
+                                <div class="step mb-5">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                </div>
+                                <div class="step mb-5">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 3</a></div>
+                                    <div class="step-item active"><a class="step-item-link">Step 4</a></div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="stepBasicTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="stepBasicHtmlTab" data-bs-toggle="tab" href="#stepBasicHtml" role="tab" aria-controls="stepBasicHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="stepBasicPugTab" data-bs-toggle="tab" href="#stepBasicPug" role="tab" aria-controls="stepBasicPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="stepBasicHtml" role="tabpanel" aria-labelledby="stepBasicHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><!-- Step Component Example -->
+<div class="step mb-5">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 3</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a>
+</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="stepBasicPug" role="tabpanel" aria-labelledby="stepBasicPugTab">
+                                        <pre class="language-pug"><code>//- Step Component Example
+.step.mb-5
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item
+a.step-item-link(href='#!') Step 2
+.step-item.active
+a.step-item-link(href='#!') Step 3
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 4</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                Use the
+                                <code>.active</code>
+                                class on the step item element in order to show which item is active. The remaining items will gray out, and the
+                                <code>.disabled</code>
+                                class can be added to the step item links to disable them from being clicked on as well!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Step Component Sizing-->
+            <div id="sizing">
+                <div class="card mb-4">
+                    <div class="card-header">Step Component Sizing</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <div class="step step-lg my-4">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="stepExampleLgTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="stepExampleLgHtmlTab" data-bs-toggle="tab" href="#stepExampleLgHtml" role="tab" aria-controls="stepExampleLgHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="stepExampleLgPugTab" data-bs-toggle="tab" href="#stepExampleLgPug" role="tab" aria-controls="stepExampleLgPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="stepExampleLgHtml" role="tabpanel" aria-labelledby="stepExampleLgHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><!-- Large Step Component Example -->
+<div class="step step-lg">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 3</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a>
+</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="stepExampleLgPug" role="tabpanel" aria-labelledby="stepExampleLgPugTab">
+                                        <pre class="language-pug"><code>//- Large Step Component Example
+.step.step-lg
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item
+a.step-item-link(href='#!') Step 2
+.step-item.active
+a.step-item-link(href='#!') Step 3
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 4</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                Use the
+                                <code>.step-lg</code>
+                                variation with the step component to create a larger step component size.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Step Component Color Options-->
+            <div id="colors">
+                <div class="card mb-4">
+                    <div class="card-header">Step Component Color Options</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <!-- Step Primary Example-->
+                                <div class="step step-primary mb-5">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                </div>
+                                <!-- Step Secondary Example-->
+                                <div class="step step-secondary mb-5">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                </div>
+                                <!-- Step Success Example-->
+                                <div class="step step-success mb-5">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                </div>
+                                <!-- Step Info Example-->
+                                <div class="step step-info mb-5">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                </div>
+                                <!-- Step Warning Example-->
+                                <div class="step step-warning mb-5">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                </div>
+                                <!-- Step Danger Example-->
+                                <div class="step step-danger">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="stepColorsTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="stepColorsHtmlTab" data-bs-toggle="tab" href="#stepColorsHtml" role="tab" aria-controls="stepColorsHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="stepColorsPugTab" data-bs-toggle="tab" href="#stepColorsPug" role="tab" aria-controls="stepColorsPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="stepColorsHtml" role="tabpanel" aria-labelledby="stepColorsHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><!-- Step Primary Example-->
+<div class="step step-primary mb-5">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 3</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a>
+</div>
+</div>
+
+<!-- Step Secondary Example-->
+<div class="step step-secondary mb-5">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 3</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a>
+</div>
+</div>
+
+<!-- Step Success Example-->
+<div class="step step-success mb-5">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 3</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a>
+</div>
+</div>
+
+<!-- Step Info Example-->
+<div class="step step-info mb-5">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 3</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a>
+</div>
+</div>
+
+<!-- Step Warning Example-->
+<div class="step step-warning mb-5">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 3</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a>
+</div>
+</div>
+
+<!-- Step Danger Example-->
+<div class="step step-danger">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 3</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a>
+</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="stepColorsPug" role="tabpanel" aria-labelledby="stepColorsPugTab">
+                                        <pre class="language-pug"><code>//- Step Primary Example
+.step.step-primary
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item
+a.step-item-link(href='#!') Step 2
+.step-item.active
+a.step-item-link(href='#!') Step 3
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 4
+
+//- Step Secondary Example
+.step.step-secondary
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item
+a.step-item-link(href='#!') Step 2
+.step-item.active
+a.step-item-link(href='#!') Step 3
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 4
+
+//- Step Success Example
+.step.step-success
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item
+a.step-item-link(href='#!') Step 2
+.step-item.active
+a.step-item-link(href='#!') Step 3
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 4
+
+//- Step Info Example
+.step.step-info
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item
+a.step-item-link(href='#!') Step 2
+.step-item.active
+a.step-item-link(href='#!') Step 3
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 4
+
+//- Step Warning Example
+.step.step-warning
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item
+a.step-item-link(href='#!') Step 2
+.step-item.active
+a.step-item-link(href='#!') Step 3
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 4
+
+//- Step Danger Example
+.step.step-danger
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item
+a.step-item-link(href='#!') Step 2
+.step-item.active
+a.step-item-link(href='#!') Step 3
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 4</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">
+                                Use any of the contextual color classes included with Bootstrap, or any of the non-contextual color classes added with Simple UX, for example,
+                                <code>.step-blue</code>
+                                to control the color of your step component.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Step Items-->
+            <div id="items">
+                <div class="card mb-4">
+                    <div class="card-header">Step Component Items</div>
+                    <div class="card-body">
+                        <!-- Component Preview-->
+                        <div class="sbp-preview">
+                            <div class="sbp-preview-content">
+                                <!-- Two Step Example-->
+                                <div class="step step-red mb-5">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 2</a></div>
+                                </div>
+                                <!-- Three Step Example-->
+                                <div class="step step-orange mb-5">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 3</a></div>
+                                </div>
+                                <!-- Four Step Example-->
+                                <div class="step step-green mb-5">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                </div>
+                                <!-- Five Step Example-->
+                                <div class="step step-blue">
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 1</a></div>
+                                    <div class="step-item"><a class="step-item-link" href="#!">Step 2</a></div>
+                                    <div class="step-item active"><a class="step-item-link" href="#!">Step 3</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a></div>
+                                    <div class="step-item"><a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 5</a></div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-code">
+                                <!-- Code sample-->
+                                <ul class="nav nav-tabs" id="stepItemsTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active me-1" id="stepItemsHtmlTab" data-bs-toggle="tab" href="#stepItemsHtml" role="tab" aria-controls="stepItemsHtml" aria-selected="true">
+                                            <i class="fab fa-html5 text-orange me-1"></i>
+                                            HTML
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="stepItemsPugTab" data-bs-toggle="tab" href="#stepItemsPug" role="tab" aria-controls="stepItemsPug" aria-selected="false">
+                                            <img class="img-pug me-1" src="assets/img/demo/pug.svg" />
+                                            PUG
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="stepItemsHtml" role="tabpanel" aria-labelledby="stepItemsHtmlTab">
+                                        <pre class="language-markup"><code><script type="text/plain"><!-- Two Step Example-->
+<div class="step">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+</div>
+
+<!-- Three Step Example-->
+<div class="step">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 3</a>
+</div>
+</div>
+
+<!-- Four Step Example-->
+<div class="step">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 3</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a>
+</div>
+</div>
+
+<!-- Five Step Example-->
+<div class="step">
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 1</a>
+</div>
+<div class="step-item">
+<a class="step-item-link" href="#!">Step 2</a>
+</div>
+<div class="step-item active">
+<a class="step-item-link" href="#!">Step 3</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 4</a>
+</div>
+<div class="step-item">
+<a class="step-item-link disabled" href="#!" tabindex="-1" aria-disabled="true">Step 5</a>
+</div>
+</div></script></code></pre>
+                                    </div>
+                                    <div class="tab-pane" id="stepItemsPug" role="tabpanel" aria-labelledby="stepItemsPugTab">
+                                        <pre class="language-pug"><code>//- Two Step Example
+.step
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item.active
+a.step-item-link(href='#!') Step 2
+
+//- Three Step Example
+.step
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item.active
+a.step-item-link(href='#!') Step 2
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 3
+
+//- Four Step Example
+.step
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item
+a.step-item-link(href='#!') Step 2
+.step-item.active
+a.step-item-link(href='#!') Step 3
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 4
+
+//- Five Step Example
+.step
+.step-item
+a.step-item-link(href='#!') Step 1
+.step-item
+a.step-item-link(href='#!') Step 2
+.step-item.active
+a.step-item-link(href='#!') Step 3
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 4
+.step-item
+a.step-item-link.disabled(href='#!', tabindex='-1', aria-disabled='true') Step 5</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sbp-preview-text">You can add or remove steps in the step component. Note that the content of each step can be hidden if there are a large number of steps, but the text content in the step item link must be modified for multiple steps for responsive sizing when needed.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sticky Navigation-->
+        <div class="col-lg-3">
+            <div class="nav-sticky">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="nav flex-column" id="stickyNav">
+                            <li class="nav-item"><a class="nav-link" href="#basic">Basic</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#sizing">Sizing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#colors">Colors</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#items">Items</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,189 @@
+{
+  "default": {
+    "target":"/",
+    "method":"get",
+    "elements":[
+      {
+        "label":"First Name",
+        "type":"text",
+        "icon":"",
+        "width":3,
+        "value": null,
+        "placeholder":"Preston",
+        "required":true,
+        "disabled":false
+      },
+      {
+        "label":"Middle Name",
+        "type":"text",
+        "icon":"",
+        "width":2,
+        "value": null,
+        "placeholder":"HoeSeong",
+        "required":false,
+        "disabled":true
+      },
+      {
+        "label":"Last Name",
+        "type":"text",
+        "icon":"",
+        "width":3,
+        "value": null,
+        "placeholder":"Ha",
+        "required":false,
+        "disabled":false
+      },
+      {
+        "label":"Email",
+        "type":"email",
+        "icon":"",
+        "width":4,
+        "value": null,
+        "placeholder":"name@escrova.com",
+        "required":true,
+        "disabled":false
+      },
+      {"type": "divider"},
+      {
+        "label":"State",
+        "type":"text",
+        "icon":"search",
+        "width":3,
+        "value": null,
+        "placeholder":"Enter State",
+        "solid": false,
+        "required":false,
+        "disabled":false
+      },
+      {
+        "label":"Country",
+        "type":"text",
+        "icon":"search",
+        "width":3,
+        "value": null,
+        "placeholder":"Enter Country",
+        "solid": false,
+        "required":false,
+        "disabled":false
+      },
+      {
+        "label":"Postal Code",
+        "type":"text",
+        "icon":"search",
+        "width":3,
+        "value": null,
+        "placeholder":"Enter your postal code",
+        "required":false,
+        "disabled":false
+      },
+      {"type": "divider"},   
+      {
+        "label":"Plain Text", 
+        "type":"textarea",
+        "width":6,
+        "rows":5,
+        "placeholder":"enter markup language",
+        "required":true,
+        "disabled":false
+      },
+      {"type": "divider"},        
+      {
+        "label":"Year", 
+        "type":"select",
+        "width":3,
+        "height":5,
+        "options":[
+          "2022",
+          "2023", 
+          "2024"
+        ],
+        "value": "2024",
+        "multiple": false,
+        "placeholder":"Select year",
+        "required":true,
+        "disabled":false
+      },
+      {
+        "label": "Time",
+        "type":"multiselect",
+        "width":3,
+        "height":5,
+        "options":[
+          "11",
+          "12",
+          "13",
+          "14",
+          "15"
+        ],
+        "value": [11,14],
+        "multiple": true,
+        "placeholder":"Select years",
+        "required":true,
+        "disabled":false
+      },
+      {"type": "divider"},
+      {
+        "label": "Cookie",
+        "type":"switch",
+        "width":3,
+        "required":false,
+        "disabled":false
+      },
+      {
+        "label": "Sample Checkbox",
+        "type":"checkbox",
+        "width":3,
+        "height":5,
+        "options":[
+          "Default Checkbox",
+          "Checked Checkbox",
+          "Disabled Checkbox"
+        ],
+        "value": ["Checked Checkbox"],
+        "multiple": true,
+        "placeholder":"Select years",
+        "required":true,
+        "disabled":false
+      },
+      {
+        "label": "Sample Radio",
+        "type":"radio",
+        "width":3,
+        "height":5,
+        "options":[
+          "Default Radio",
+          "Checked Radio",
+          "Disabled Radio"
+        ],
+        "value": ["Checked Radio"],
+        "multiple": true,
+        "placeholder":"Select years",
+        "required":true,
+        "disabled":false
+      }
+    ],
+    "footer":{
+      "Submit":{"type":"submit","class":"primary"}
+    }
+  },
+  "reset": {
+    "target":"/reset",
+    "type": "ajax",
+    "method":"get",
+    "elements":[
+      {
+        "label":"Email",
+        "type":"email",
+        "icon":"",
+        "width":4,
+        "value": null,
+        "placeholder":"name@escrova.com",
+        "required":true,
+        "disabled":false
+      }
+    ],
+    "footer":{
+      "Submit":{"type":"submit","class":"primary"}
+    }
+  }
+}
