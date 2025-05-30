@@ -4,3 +4,4 @@ twine
 flask
 pytz
 cryptography
+psutil
